@@ -1,0 +1,30 @@
+spring:
+  redis:
+    url: redis://localhost:6379
+  datasource:
+    url: jdbc:mysql:///student?useUnicode=true&characterEncoding=utf-8&serverTimezone=GMT
+    username: root
+    password: 1234
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    show-sql: true
+  application:
+    name: scw-user
+eureka:
+  client:
+    service-url:
+      default-zone: http://localhost:8761/eureka/
+  instance:
+    prefer-ip-address: true
+sms:
+  host: http://dingxin.market.alicloudapi.com
+  path: /dx/sendSms
+  method: POST
+  appcode: 3537ebf96b7d4c64be9210873691fc37
+logging:
+  file:
+    path: ./scw-user/log
+server:
+  port: 8000
+
+

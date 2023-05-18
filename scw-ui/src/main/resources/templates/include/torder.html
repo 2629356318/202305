@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="zh-CN" xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="keys" content="">
+    <meta name="author" content="">
+	<link rel="stylesheet" th:href="@{/css/login.css}">
+      <div th:include="~{include/include :: cssStyle }"></div>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <div><a class="navbar-brand" href="/" style="font-size:32px;">创意产品众筹平台</a></div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+
+      <form class="form-signin" id="loForm" th:action="@{/project/saveReturn}" method="post">
+
+        <h2 class="form-signin-heading"><i class="glyphicon glyphicon-log-in"></i> 回报创建</h2>
+        <h4 th:text="'项目编码'">
+        </h4>
+        <div class="form-group has-success has-feedback">
+
+          <input type="text" class="form-control" id="projectToken" name="projectToken" th:value="${session.aa.projectToken}" readonly="readonly">
+          <span class="glyphicon glyphicon-user form-control-feedback"></span>
+        </div>
+
+        <div class="form-group has-success has-feedback">
+			<input type="text" class="form-control" id="content" name="content"  placeholder="回报内容" autofocus>
+			<span class="glyphicon glyphicon-user form-control-feedback"></span>
+		  </div>
+        <div class="form-group has-success has-feedback">
+        <input type="text" class="form-control" id="supportmoney1" name="supportmoney"  placeholder="单价" autofocus>
+        <span class="glyphicon glyphicon-user form-control-feedback"></span>
+      </div>
+        <div class="form-group has-success has-feedback">
+          <input type="text" class="form-control" id="signalpurchase" name="signalpurchase"  placeholder="单笔限购" autofocus>
+          <span class="glyphicon glyphicon-user form-control-feedback"></span>
+        </div>
+
+        <div class="form-group has-success has-feedback">
+          <input type="text" class="form-control" id="freight" name="freight"  placeholder="运费" autofocus>
+          <span class="glyphicon glyphicon-user form-control-feedback"></span>
+        </div>
+
+        <div class="form-group has-success has-feedback">
+          <input type="text" class="form-control" id="rtndate" name="rtndate"  placeholder="成功后几天后开始回报" autofocus>
+          <span class="glyphicon glyphicon-user form-control-feedback"></span>
+        </div>
+
+        <button class="btn btn-info" type="button" data-toggle="tooltip" title="新增" id="addCenterIpGrpBtn" onclick="addCenterIpGrp(this)" ><span class="glyphicon glyphicon-plus"></span></button>
+
+
+        <a class="btn btn-lg btn-success btn-block" onclick="dologin1()" > 提交</a>
+      </form>
+      </div>
+    </div>
+    <div th:include="~{include/include :: commonJs}"></div>
+    <script   type="text/javascript">
+    function dologin1() {
+        $('#loForm').submit()
+    }
+
+    var rowCount = 1;
+    function addCenterIpGrp(obj){
+      rowCount++
+      html =`
+
+         <div >
+         <div class="form-group has-success has-feedback">
+            <input type="text" class="form-control" id="content'+rowCount+'" name="content'+rowCount+'"  placeholder="回报内容" autofocus>
+    <span class="glyphicon glyphicon-user form-control-feedback"></span>
+</div>
+ <div class="form-group has-success has-feedback">
+            <input type="text" class="form-control" id="supportmoney1'+rowCount+'" name="supportmoney'+rowCount+'"  placeholder="单价" autofocus>
+    <span class="glyphicon glyphicon-user form-control-feedback"></span>
+</div>
+<div class="form-group has-success has-feedback">
+            <input type="text" class="form-control" id="signalpurchase'+rowCount+'" name="signalpurchase'+rowCount+'"  placeholder="单笔限购" autofocus>
+    <span class="glyphicon glyphicon-user form-control-feedback"></span>
+
+</div>
+ <div class="form-group has-success has-feedback">
+            <input type="text" class="form-control" id="freight'+rowCount+'" name="freight'+rowCount+'"  placeholder="运费" autofocus>
+    <span class="glyphicon glyphicon-user form-control-feedback"></span>
+    </div>
+<div>
+</div>
+ <div class="form-group has-success has-feedback">
+            <input type="text" class="form-control" id="rtndate'+rowCount+'" name="rtndate'+rowCount+'"  placeholder="成功后几天后开始回报" autofocus>
+    <span class="glyphicon glyphicon-user form-control-feedback"></span>
+
+<button class="btn btn-info" type="button" data-toggle="tooltip" title="删除" id="delCenterIpGrp"><span class="glyphicon glyphicon-minus"></span></button>
+</div>
+</div>
+</div>
+           `
+      obj.insertAdjacentHTML('beforebegin',html)
+    }
+
+
+    $(document).on('click','#delCenterIpGrp',function(){
+      var el = this.parentNode.parentNode ;
+      var centerIp = $(this).parent().parent().find('#ipInput').val() ;
+      el.parentNode.removeChild(el)
+    })
+
+    </script>
+
+
+
+  </body>
+</html>

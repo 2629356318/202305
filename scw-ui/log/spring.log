@@ -1,0 +1,761 @@
+2023-05-07 08:40:51.924  INFO 2488 --- [restartedMain] com.deng.proj.ScwUiApplication           : No active profile set, falling back to default profiles: default
+2023-05-07 08:40:56.918  INFO 2488 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-05-07 08:40:56.933  INFO 2488 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-05-07 08:40:57.084  INFO 2488 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 76ms. Found 0 Redis repository interfaces.
+2023-05-07 08:40:57.640  WARN 2488 --- [restartedMain] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2023-05-07 08:40:57.754  WARN 2488 --- [restartedMain] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'hystrix.stream' contains invalid characters, please migrate to a valid format.
+2023-05-07 08:40:58.382  INFO 2488 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=6a9e4bb0-1309-3e98-84f8-e022fa45b5ca
+2023-05-07 08:41:02.298  INFO 2488 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8003 (http)
+2023-05-07 08:41:02.334  INFO 2488 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-05-07 08:41:02.336  INFO 2488 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.30]
+2023-05-07 08:41:03.027  INFO 2488 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-05-07 08:41:03.028  INFO 2488 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 11006 ms
+2023-05-07 08:41:03.516  WARN 2488 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2023-05-07 08:41:03.517  INFO 2488 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2023-05-07 08:41:03.578  INFO 2488 --- [restartedMain] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@508cfbb5
+2023-05-07 08:41:10.946  WARN 2488 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2023-05-07 08:41:11.306  WARN 2488 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2023-05-07 08:41:11.307  INFO 2488 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2023-05-07 08:41:12.068  INFO 2488 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2023-05-07 08:41:12.476  INFO 2488 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2023-05-07 08:41:14.178  INFO 2488 --- [restartedMain] io.lettuce.core.EpollProvider            : Starting without optional epoll library
+2023-05-07 08:41:14.183  INFO 2488 --- [restartedMain] io.lettuce.core.KqueueProvider           : Starting without optional kqueue library
+2023-05-07 08:41:24.791  WARN 2488 --- [restartedMain] ockingLoadBalancerClientRibbonWarnLogger : You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2023-05-07 08:41:25.253  INFO 2488 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-05-07 08:41:26.235  INFO 2488 --- [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2023-05-07 08:41:26.476  INFO 2488 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2023-05-07 08:41:28.598  INFO 2488 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2023-05-07 08:41:28.599  INFO 2488 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2023-05-07 08:41:29.638  INFO 2488 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2023-05-07 08:41:29.639  INFO 2488 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2023-05-07 08:41:30.691  INFO 2488 --- [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-05-07 08:41:34.044  INFO 2488 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2023-05-07 08:41:34.045  INFO 2488 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2023-05-07 08:41:34.045  INFO 2488 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2023-05-07 08:41:34.046  INFO 2488 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2023-05-07 08:41:34.046  INFO 2488 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2023-05-07 08:41:34.046  INFO 2488 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2023-05-07 08:41:34.046  INFO 2488 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2023-05-07 08:41:35.048  INFO 2488 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2023-05-07 08:41:35.057  INFO 2488 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2023-05-07 08:41:35.064  INFO 2488 --- [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2023-05-07 08:41:35.076  INFO 2488 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1683420095073 with initial instances count: 1
+2023-05-07 08:41:35.093  INFO 2488 --- [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application SCW-UI with eureka with status UP
+2023-05-07 08:41:35.096  INFO 2488 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1683420095096, current=UP, previous=STARTING]
+2023-05-07 08:41:35.164  INFO 2488 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SCW-UI/LAPTOP-26G6KRJQ:scw-ui:8003: registering service...
+2023-05-07 08:41:35.442  INFO 2488 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SCW-UI/LAPTOP-26G6KRJQ:scw-ui:8003 - registration status: 204
+2023-05-07 08:41:35.917  INFO 2488 --- [restartedMain] s.a.ScheduledAnnotationBeanPostProcessor : No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2023-05-07 08:41:36.777  INFO 2488 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8003 (http) with context path ''
+2023-05-07 08:41:36.780  INFO 2488 --- [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8003
+2023-05-07 08:41:42.442  INFO 2488 --- [restartedMain] com.deng.proj.ScwUiApplication           : Started ScwUiApplication in 56.209 seconds (JVM running for 61.231)
+2023-05-07 08:41:47.881  INFO 2488 --- [RMI TCP Connection(6)-172.19.64.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-05-07 08:41:47.882  INFO 2488 --- [RMI TCP Connection(6)-172.19.64.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-05-07 08:41:47.938  INFO 2488 --- [RMI TCP Connection(6)-172.19.64.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 54 ms
+2023-05-07 08:43:16.746 DEBUG 2488 --- [hystrix-scw-project-1] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#all] ---> GET http://scw-project/project/all HTTP/1.1
+2023-05-07 08:43:16.747 DEBUG 2488 --- [hystrix-scw-project-1] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#all] ---> END HTTP (0-byte body)
+2023-05-07 08:43:17.145  INFO 2488 --- [hystrix-scw-project-1] c.netflix.config.ChainedDynamicProperty  : Flipping property: scw-project.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2023-05-07 08:43:17.202  INFO 2488 --- [hystrix-scw-project-1] c.n.u.concurrent.ShutdownEnabledTimer    : Shutdown hook installed for: NFLoadBalancer-PingTimer-scw-project
+2023-05-07 08:43:17.204  INFO 2488 --- [hystrix-scw-project-1] c.netflix.loadbalancer.BaseLoadBalancer  : Client: scw-project instantiated a LoadBalancer: DynamicServerListLoadBalancer:{NFLoadBalancer:name=scw-project,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:null
+2023-05-07 08:43:17.218  INFO 2488 --- [hystrix-scw-project-1] c.n.l.DynamicServerListLoadBalancer      : Using serverListUpdater PollingServerListUpdater
+2023-05-07 08:43:17.268  INFO 2488 --- [hystrix-scw-project-1] c.netflix.config.ChainedDynamicProperty  : Flipping property: scw-project.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2023-05-07 08:43:17.271  INFO 2488 --- [hystrix-scw-project-1] c.n.l.DynamicServerListLoadBalancer      : DynamicServerListLoadBalancer for client scw-project initialized: DynamicServerListLoadBalancer:{NFLoadBalancer:name=scw-project,current list of Servers=[192.168.46.1:8001],Load balancer stats=Zone stats: {defaultzone=[Zone:defaultzone;	Instance count:1;	Active connections count: 0;	Circuit breaker tripped count: 0;	Active connections per server: 0.0;]
+},Server stats: [[Server:192.168.46.1:8001;	Zone:defaultZone;	Total Requests:0;	Successive connection failure:0;	Total blackout seconds:0;	Last connection made:Thu Jan 01 08:00:00 CST 1970;	First connection made: Thu Jan 01 08:00:00 CST 1970;	Active Connections:0;	total failure count in last (1000) msecs:0;	average resp time:0.0;	90 percentile resp time:0.0;	95 percentile resp time:0.0;	min resp time:0.0;	max resp time:0.0;	stddev resp time:0.0]
+]}ServerList:org.springframework.cloud.netflix.ribbon.eureka.DomainExtractingServerList@653221da
+2023-05-07 08:43:18.229  INFO 2488 --- [PollingServerListUpdater-0] c.netflix.config.ChainedDynamicProperty  : Flipping property: scw-project.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2023-05-07 08:43:18.254 DEBUG 2488 --- [hystrix-scw-project-1] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#all] <--- HTTP/1.1 200 (1505ms)
+2023-05-07 08:43:18.255 DEBUG 2488 --- [hystrix-scw-project-1] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#all] connection: keep-alive
+2023-05-07 08:43:18.255 DEBUG 2488 --- [hystrix-scw-project-1] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#all] content-type: application/json
+2023-05-07 08:43:18.256 DEBUG 2488 --- [hystrix-scw-project-1] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#all] date: Sun, 07 May 2023 00:43:18 GMT
+2023-05-07 08:43:18.256 DEBUG 2488 --- [hystrix-scw-project-1] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#all] keep-alive: timeout=60
+2023-05-07 08:43:18.257 DEBUG 2488 --- [hystrix-scw-project-1] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#all] transfer-encoding: chunked
+2023-05-07 08:43:18.257 DEBUG 2488 --- [hystrix-scw-project-1] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#all] 
+2023-05-07 08:43:18.264 DEBUG 2488 --- [hystrix-scw-project-1] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#all] {"code":0,"msg":"操作成功","data":[{"memberid":3,"id":6,"name":"第1个项目","remark":"非常棒的项目","headerImage":null,"money":50000,"createdate":"2020-01-11 13:08:57","follower":88},{"memberid":6,"id":7,"name":"测试项目","remark":"这是一个好项目","headerImage":null,"money":100000,"createdate":"2020-06-16 06:50:04","follower":100},{"memberid":8,"id":8,"name":"鉴赏","remark":"用心去看","headerImage":null,"money":2000000,"createdate":"2021-12-23 18:54:31","follower":66},{"memberid":9,"id":9,"name":"aaaa","remark":"FfF","headerImage":null,"money":10,"createdate":"2023-02-01 17:51:53","follower":34},{"memberid":9,"id":13,"name":"测试项目4","remark":"测试4","headerImage":null,"money":10000,"createdate":"2023-02-23 17:42:00","follower":1},{"memberid":9,"id":14,"name":"ER儿童机器人","remark":"儿童好伙伴","headerImage":null,"money":1999,"createdate":"2023-02-23 17:42:00","follower":100},{"memberid":9,"id":15,"name":"智能夜灯","remark":"给您家人最贴心的关怀","headerImage":null,"money":38888,"createdate":"2023-02-25 17:42:00","follower":105},{"memberid":9,"id":16,"name":"PM2.5空气质量检测仪","remark":"您的健康生活小助手","headerImage":null,"money":58888,"createdate":"2023-02-25 17:42:00","follower":108},{"memberid":9,"id":23,"name":"测试报告项目","remark":"这个是测试项目","headerImage":null,"money":100,"createdate":"2023-03-26 00:54:36","follower":null},{"memberid":12,"id":24,"name":"","remark":"","headerImage":null,"money":null,"createdate":"2023-05-05 15:49:28","follower":null}]}
+2023-05-07 08:43:18.265 DEBUG 2488 --- [hystrix-scw-project-1] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#all] <--- END HTTP (1585-byte body)
+2023-05-07 08:46:34.053  INFO 2488 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-05-07 09:01:27.294  WARN 2488 --- [RMI TCP Accept-0] sun.rmi.transport.tcp                    : RMI TCP Accept-0: accept loop for ServerSocket[addr=0.0.0.0/0.0.0.0,localport=49275] throws
+
+java.io.IOException: The server sockets created using the LocalRMIServerSocketFactory only accept connections from clients running on the host where the RMI remote objects have been exported.
+	at sun.management.jmxremote.LocalRMIServerSocketFactory$1.accept(LocalRMIServerSocketFactory.java:114) ~[na:1.8.0_40]
+	at sun.rmi.transport.tcp.TCPTransport$AcceptLoop.executeAcceptLoop(TCPTransport.java:400) [na:1.8.0_40]
+	at sun.rmi.transport.tcp.TCPTransport$AcceptLoop.run(TCPTransport.java:372) [na:1.8.0_40]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_40]
+
+2023-05-07 09:06:12.813  INFO 2488 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-05-07 09:07:52.375 DEBUG 2488 --- [hystrix-scw-project-2] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#detailsInfo] ---> GET http://scw-project/project/details/info/7 HTTP/1.1
+2023-05-07 09:07:52.376 DEBUG 2488 --- [hystrix-scw-project-2] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#detailsInfo] ---> END HTTP (0-byte body)
+2023-05-07 09:07:52.529 DEBUG 2488 --- [hystrix-scw-project-2] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#detailsInfo] <--- HTTP/1.1 200 (153ms)
+2023-05-07 09:07:52.530 DEBUG 2488 --- [hystrix-scw-project-2] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#detailsInfo] connection: keep-alive
+2023-05-07 09:07:52.530 DEBUG 2488 --- [hystrix-scw-project-2] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#detailsInfo] content-type: application/json
+2023-05-07 09:07:52.531 DEBUG 2488 --- [hystrix-scw-project-2] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#detailsInfo] date: Sun, 07 May 2023 01:07:52 GMT
+2023-05-07 09:07:52.532 DEBUG 2488 --- [hystrix-scw-project-2] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#detailsInfo] keep-alive: timeout=60
+2023-05-07 09:07:52.532 DEBUG 2488 --- [hystrix-scw-project-2] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#detailsInfo] transfer-encoding: chunked
+2023-05-07 09:07:52.532 DEBUG 2488 --- [hystrix-scw-project-2] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#detailsInfo] 
+2023-05-07 09:07:52.533 DEBUG 2488 --- [hystrix-scw-project-2] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#detailsInfo] {"code":0,"msg":"操作成功","data":{"memberid":6,"id":7,"name":"测试项目","remark":"这是一个好项目","money":null,"day":100,"status":"1","deploydate":null,"supportmoney":30000,"supporter":68,"completion":30,"follower":100,"headerImage":null,"detailsImage":["http://www.dongyimai.com/data/afficheimg/20200410tkhqmy.jpg","http://www.dongyimai.com/data/afficheimg/20190515rihdju.jpg","http://www.ujiuye.com/uploadfile/2020/0610/20200610060037292.jpg","http://www.ujiuye.com/uploadfile/2019/0809/20190809052021246.jpg","http://bu-guai.oss-cn-chengdu.aliyuncs.com/pic/xue.png","http://bu-guai.oss-cn-chengdu.aliyuncs.com/pic/xue.png","http://bu-guai.oss-cn-chengdu.aliyuncs.com/pic/xue.png","111","chengdu.aliyuncs.com/pic/xue.png","http://www.dongyimai.com/data/afficheimg/20190515rihdju.jpg"],"projectReturns":[{"id":6,"projectid":7,"type":"1","supportmoney":6,"content":"test001","count":10,"signalpurchase":5,"purchase":3,"freight":1,"invoice":null,"rtndate":4}]}}
+2023-05-07 09:07:52.534 DEBUG 2488 --- [hystrix-scw-project-2] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#detailsInfo] <--- END HTTP (976-byte body)
+2023-05-07 09:07:58.917 DEBUG 2488 --- [hystrix-scw-project-3] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#returnInfo] ---> GET http://scw-project/project/returns/info/6 HTTP/1.1
+2023-05-07 09:07:58.917 DEBUG 2488 --- [hystrix-scw-project-3] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#returnInfo] ---> END HTTP (0-byte body)
+2023-05-07 09:07:58.936 DEBUG 2488 --- [hystrix-scw-project-3] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#returnInfo] <--- HTTP/1.1 200 (18ms)
+2023-05-07 09:07:58.936 DEBUG 2488 --- [hystrix-scw-project-3] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#returnInfo] connection: keep-alive
+2023-05-07 09:07:58.937 DEBUG 2488 --- [hystrix-scw-project-3] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#returnInfo] content-type: application/json
+2023-05-07 09:07:58.937 DEBUG 2488 --- [hystrix-scw-project-3] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#returnInfo] date: Sun, 07 May 2023 01:07:58 GMT
+2023-05-07 09:07:58.937 DEBUG 2488 --- [hystrix-scw-project-3] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#returnInfo] keep-alive: timeout=60
+2023-05-07 09:07:58.937 DEBUG 2488 --- [hystrix-scw-project-3] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#returnInfo] transfer-encoding: chunked
+2023-05-07 09:07:58.938 DEBUG 2488 --- [hystrix-scw-project-3] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#returnInfo] 
+2023-05-07 09:07:58.938 DEBUG 2488 --- [hystrix-scw-project-3] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#returnInfo] {"code":0,"msg":"操作成功","data":{"id":6,"projectid":7,"type":"1","supportmoney":6,"content":"test001","count":10,"signalpurchase":5,"purchase":3,"freight":1,"invoice":null,"rtndate":4}}
+2023-05-07 09:07:58.939 DEBUG 2488 --- [hystrix-scw-project-3] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#returnInfo] <--- END HTTP (191-byte body)
+2023-05-07 09:07:58.957 DEBUG 2488 --- [hystrix-SCW-USER-1] com.deng.proj.feign.MemberServiceFeign   : [MemberServiceFeign#findUser] ---> GET http://SCW-USER/user/findUser/6 HTTP/1.1
+2023-05-07 09:07:58.957 DEBUG 2488 --- [hystrix-SCW-USER-1] com.deng.proj.feign.MemberServiceFeign   : [MemberServiceFeign#findUser] ---> END HTTP (0-byte body)
+2023-05-07 09:07:59.046  INFO 2488 --- [hystrix-SCW-USER-1] c.netflix.config.ChainedDynamicProperty  : Flipping property: SCW-USER.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2023-05-07 09:07:59.049  INFO 2488 --- [hystrix-SCW-USER-1] c.n.u.concurrent.ShutdownEnabledTimer    : Shutdown hook installed for: NFLoadBalancer-PingTimer-SCW-USER
+2023-05-07 09:07:59.049  INFO 2488 --- [hystrix-SCW-USER-1] c.netflix.loadbalancer.BaseLoadBalancer  : Client: SCW-USER instantiated a LoadBalancer: DynamicServerListLoadBalancer:{NFLoadBalancer:name=SCW-USER,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:null
+2023-05-07 09:07:59.051  INFO 2488 --- [hystrix-SCW-USER-1] c.n.l.DynamicServerListLoadBalancer      : Using serverListUpdater PollingServerListUpdater
+2023-05-07 09:07:59.054  INFO 2488 --- [hystrix-SCW-USER-1] c.netflix.config.ChainedDynamicProperty  : Flipping property: SCW-USER.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2023-05-07 09:07:59.055  INFO 2488 --- [hystrix-SCW-USER-1] c.n.l.DynamicServerListLoadBalancer      : DynamicServerListLoadBalancer for client SCW-USER initialized: DynamicServerListLoadBalancer:{NFLoadBalancer:name=SCW-USER,current list of Servers=[192.168.46.1:8000],Load balancer stats=Zone stats: {defaultzone=[Zone:defaultzone;	Instance count:1;	Active connections count: 0;	Circuit breaker tripped count: 0;	Active connections per server: 0.0;]
+},Server stats: [[Server:192.168.46.1:8000;	Zone:defaultZone;	Total Requests:0;	Successive connection failure:0;	Total blackout seconds:0;	Last connection made:Thu Jan 01 08:00:00 CST 1970;	First connection made: Thu Jan 01 08:00:00 CST 1970;	Active Connections:0;	total failure count in last (1000) msecs:0;	average resp time:0.0;	90 percentile resp time:0.0;	95 percentile resp time:0.0;	min resp time:0.0;	max resp time:0.0;	stddev resp time:0.0]
+]}ServerList:org.springframework.cloud.netflix.ribbon.eureka.DomainExtractingServerList@69841b44
+2023-05-07 09:07:59.537 DEBUG 2488 --- [hystrix-SCW-USER-1] com.deng.proj.feign.MemberServiceFeign   : [MemberServiceFeign#findUser] <--- HTTP/1.1 200 (579ms)
+2023-05-07 09:07:59.538 DEBUG 2488 --- [hystrix-SCW-USER-1] com.deng.proj.feign.MemberServiceFeign   : [MemberServiceFeign#findUser] connection: keep-alive
+2023-05-07 09:07:59.538 DEBUG 2488 --- [hystrix-SCW-USER-1] com.deng.proj.feign.MemberServiceFeign   : [MemberServiceFeign#findUser] content-type: application/json
+2023-05-07 09:07:59.538 DEBUG 2488 --- [hystrix-SCW-USER-1] com.deng.proj.feign.MemberServiceFeign   : [MemberServiceFeign#findUser] date: Sun, 07 May 2023 01:07:59 GMT
+2023-05-07 09:07:59.538 DEBUG 2488 --- [hystrix-SCW-USER-1] com.deng.proj.feign.MemberServiceFeign   : [MemberServiceFeign#findUser] keep-alive: timeout=60
+2023-05-07 09:07:59.538 DEBUG 2488 --- [hystrix-SCW-USER-1] com.deng.proj.feign.MemberServiceFeign   : [MemberServiceFeign#findUser] transfer-encoding: chunked
+2023-05-07 09:07:59.538 DEBUG 2488 --- [hystrix-SCW-USER-1] com.deng.proj.feign.MemberServiceFeign   : [MemberServiceFeign#findUser] 
+2023-05-07 09:07:59.550 DEBUG 2488 --- [hystrix-SCW-USER-1] com.deng.proj.feign.MemberServiceFeign   : [MemberServiceFeign#findUser] {"code":0,"msg":"操作成功","data":{"id":6,"loginacct":"13521281599","userpswd":"$2a$10$WwiGvC0j0QBwEHO54ui20OAfmjFKt4J1PbC40KmqqH6ztI9hH6RJC","username":"13521281544","email":"hk109@126.com","authstatus":"0","usertype":"0","realname":"李经理","cardnum":null,"accttype":"2"}}
+2023-05-07 09:07:59.550 DEBUG 2488 --- [hystrix-SCW-USER-1] com.deng.proj.feign.MemberServiceFeign   : [MemberServiceFeign#findUser] <--- END HTTP (281-byte body)
+2023-05-07 09:08:00.066  INFO 2488 --- [PollingServerListUpdater-0] c.netflix.config.ChainedDynamicProperty  : Flipping property: SCW-USER.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2023-05-07 09:08:04.044 DEBUG 2488 --- [hystrix-scw-project-4] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#all] ---> GET http://scw-project/project/all HTTP/1.1
+2023-05-07 09:08:04.045 DEBUG 2488 --- [hystrix-scw-project-4] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#all] ---> END HTTP (0-byte body)
+2023-05-07 09:08:04.159 DEBUG 2488 --- [hystrix-scw-project-4] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#all] <--- HTTP/1.1 200 (114ms)
+2023-05-07 09:08:04.160 DEBUG 2488 --- [hystrix-scw-project-4] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#all] connection: keep-alive
+2023-05-07 09:08:04.160 DEBUG 2488 --- [hystrix-scw-project-4] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#all] content-type: application/json
+2023-05-07 09:08:04.160 DEBUG 2488 --- [hystrix-scw-project-4] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#all] date: Sun, 07 May 2023 01:08:04 GMT
+2023-05-07 09:08:04.161 DEBUG 2488 --- [hystrix-scw-project-4] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#all] keep-alive: timeout=60
+2023-05-07 09:08:04.161 DEBUG 2488 --- [hystrix-scw-project-4] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#all] transfer-encoding: chunked
+2023-05-07 09:08:04.161 DEBUG 2488 --- [hystrix-scw-project-4] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#all] 
+2023-05-07 09:08:04.162 DEBUG 2488 --- [hystrix-scw-project-4] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#all] {"code":0,"msg":"操作成功","data":[{"memberid":3,"id":6,"name":"第1个项目","remark":"非常棒的项目","headerImage":null,"money":50000,"createdate":"2020-01-11 13:08:57","follower":88},{"memberid":6,"id":7,"name":"测试项目","remark":"这是一个好项目","headerImage":null,"money":100000,"createdate":"2020-06-16 06:50:04","follower":100},{"memberid":8,"id":8,"name":"鉴赏","remark":"用心去看","headerImage":null,"money":2000000,"createdate":"2021-12-23 18:54:31","follower":66},{"memberid":9,"id":9,"name":"aaaa","remark":"FfF","headerImage":null,"money":10,"createdate":"2023-02-01 17:51:53","follower":34},{"memberid":9,"id":13,"name":"测试项目4","remark":"测试4","headerImage":null,"money":10000,"createdate":"2023-02-23 17:42:00","follower":1},{"memberid":9,"id":14,"name":"ER儿童机器人","remark":"儿童好伙伴","headerImage":null,"money":1999,"createdate":"2023-02-23 17:42:00","follower":100},{"memberid":9,"id":15,"name":"智能夜灯","remark":"给您家人最贴心的关怀","headerImage":null,"money":38888,"createdate":"2023-02-25 17:42:00","follower":105},{"memberid":9,"id":16,"name":"PM2.5空气质量检测仪","remark":"您的健康生活小助手","headerImage":null,"money":58888,"createdate":"2023-02-25 17:42:00","follower":108},{"memberid":9,"id":23,"name":"测试报告项目","remark":"这个是测试项目","headerImage":null,"money":100,"createdate":"2023-03-26 00:54:36","follower":null},{"memberid":12,"id":24,"name":"","remark":"","headerImage":null,"money":null,"createdate":"2023-05-05 15:49:28","follower":null}]}
+2023-05-07 09:08:04.162 DEBUG 2488 --- [hystrix-scw-project-4] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#all] <--- END HTTP (1585-byte body)
+2023-05-07 09:08:23.629 DEBUG 2488 --- [hystrix-scw-project-5] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#all] ---> GET http://scw-project/project/all HTTP/1.1
+2023-05-07 09:08:23.630 DEBUG 2488 --- [hystrix-scw-project-5] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#all] ---> END HTTP (0-byte body)
+2023-05-07 09:08:23.729 DEBUG 2488 --- [hystrix-scw-project-5] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#all] <--- HTTP/1.1 200 (98ms)
+2023-05-07 09:08:23.730 DEBUG 2488 --- [hystrix-scw-project-5] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#all] connection: keep-alive
+2023-05-07 09:08:23.731 DEBUG 2488 --- [hystrix-scw-project-5] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#all] content-type: application/json
+2023-05-07 09:08:23.731 DEBUG 2488 --- [hystrix-scw-project-5] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#all] date: Sun, 07 May 2023 01:08:23 GMT
+2023-05-07 09:08:23.732 DEBUG 2488 --- [hystrix-scw-project-5] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#all] keep-alive: timeout=60
+2023-05-07 09:08:23.732 DEBUG 2488 --- [hystrix-scw-project-5] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#all] transfer-encoding: chunked
+2023-05-07 09:08:23.732 DEBUG 2488 --- [hystrix-scw-project-5] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#all] 
+2023-05-07 09:08:23.733 DEBUG 2488 --- [hystrix-scw-project-5] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#all] {"code":0,"msg":"操作成功","data":[{"memberid":3,"id":6,"name":"第1个项目","remark":"非常棒的项目","headerImage":null,"money":50000,"createdate":"2020-01-11 13:08:57","follower":88},{"memberid":6,"id":7,"name":"测试项目","remark":"这是一个好项目","headerImage":null,"money":100000,"createdate":"2020-06-16 06:50:04","follower":100},{"memberid":8,"id":8,"name":"鉴赏","remark":"用心去看","headerImage":null,"money":2000000,"createdate":"2021-12-23 18:54:31","follower":66},{"memberid":9,"id":9,"name":"aaaa","remark":"FfF","headerImage":null,"money":10,"createdate":"2023-02-01 17:51:53","follower":34},{"memberid":9,"id":13,"name":"测试项目4","remark":"测试4","headerImage":null,"money":10000,"createdate":"2023-02-23 17:42:00","follower":1},{"memberid":9,"id":14,"name":"ER儿童机器人","remark":"儿童好伙伴","headerImage":null,"money":1999,"createdate":"2023-02-23 17:42:00","follower":100},{"memberid":9,"id":15,"name":"智能夜灯","remark":"给您家人最贴心的关怀","headerImage":null,"money":38888,"createdate":"2023-02-25 17:42:00","follower":105},{"memberid":9,"id":16,"name":"PM2.5空气质量检测仪","remark":"您的健康生活小助手","headerImage":null,"money":58888,"createdate":"2023-02-25 17:42:00","follower":108},{"memberid":9,"id":23,"name":"测试报告项目","remark":"这个是测试项目","headerImage":null,"money":100,"createdate":"2023-03-26 00:54:36","follower":null},{"memberid":12,"id":24,"name":"","remark":"","headerImage":null,"money":null,"createdate":"2023-05-05 15:49:28","follower":null}]}
+2023-05-07 09:08:23.733 DEBUG 2488 --- [hystrix-scw-project-5] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#all] <--- END HTTP (1585-byte body)
+2023-05-07 09:09:14.483 DEBUG 2488 --- [hystrix-scw-project-6] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#all] ---> GET http://scw-project/project/all HTTP/1.1
+2023-05-07 09:09:14.483 DEBUG 2488 --- [hystrix-scw-project-6] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#all] ---> END HTTP (0-byte body)
+2023-05-07 09:09:14.576 DEBUG 2488 --- [hystrix-scw-project-6] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#all] <--- HTTP/1.1 200 (92ms)
+2023-05-07 09:09:14.577 DEBUG 2488 --- [hystrix-scw-project-6] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#all] connection: keep-alive
+2023-05-07 09:09:14.577 DEBUG 2488 --- [hystrix-scw-project-6] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#all] content-type: application/json
+2023-05-07 09:09:14.577 DEBUG 2488 --- [hystrix-scw-project-6] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#all] date: Sun, 07 May 2023 01:09:14 GMT
+2023-05-07 09:09:14.577 DEBUG 2488 --- [hystrix-scw-project-6] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#all] keep-alive: timeout=60
+2023-05-07 09:09:14.577 DEBUG 2488 --- [hystrix-scw-project-6] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#all] transfer-encoding: chunked
+2023-05-07 09:09:14.577 DEBUG 2488 --- [hystrix-scw-project-6] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#all] 
+2023-05-07 09:09:14.578 DEBUG 2488 --- [hystrix-scw-project-6] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#all] {"code":0,"msg":"操作成功","data":[{"memberid":3,"id":6,"name":"第1个项目","remark":"非常棒的项目","headerImage":null,"money":50000,"createdate":"2020-01-11 13:08:57","follower":88},{"memberid":6,"id":7,"name":"测试项目","remark":"这是一个好项目","headerImage":null,"money":100000,"createdate":"2020-06-16 06:50:04","follower":100},{"memberid":8,"id":8,"name":"鉴赏","remark":"用心去看","headerImage":null,"money":2000000,"createdate":"2021-12-23 18:54:31","follower":66},{"memberid":9,"id":9,"name":"aaaa","remark":"FfF","headerImage":null,"money":10,"createdate":"2023-02-01 17:51:53","follower":34},{"memberid":9,"id":13,"name":"测试项目4","remark":"测试4","headerImage":null,"money":10000,"createdate":"2023-02-23 17:42:00","follower":1},{"memberid":9,"id":14,"name":"ER儿童机器人","remark":"儿童好伙伴","headerImage":null,"money":1999,"createdate":"2023-02-23 17:42:00","follower":100},{"memberid":9,"id":15,"name":"智能夜灯","remark":"给您家人最贴心的关怀","headerImage":null,"money":38888,"createdate":"2023-02-25 17:42:00","follower":105},{"memberid":9,"id":16,"name":"PM2.5空气质量检测仪","remark":"您的健康生活小助手","headerImage":null,"money":58888,"createdate":"2023-02-25 17:42:00","follower":108},{"memberid":9,"id":23,"name":"测试报告项目","remark":"这个是测试项目","headerImage":null,"money":100,"createdate":"2023-03-26 00:54:36","follower":null},{"memberid":12,"id":24,"name":"","remark":"","headerImage":null,"money":null,"createdate":"2023-05-05 15:49:28","follower":null}]}
+2023-05-07 09:09:14.579 DEBUG 2488 --- [hystrix-scw-project-6] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#all] <--- END HTTP (1585-byte body)
+2023-05-07 09:10:05.509 DEBUG 2488 --- [hystrix-scw-project-7] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#all] ---> GET http://scw-project/project/all HTTP/1.1
+2023-05-07 09:10:05.510 DEBUG 2488 --- [hystrix-scw-project-7] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#all] ---> END HTTP (0-byte body)
+2023-05-07 09:10:05.591 DEBUG 2488 --- [hystrix-scw-project-7] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#all] <--- HTTP/1.1 200 (81ms)
+2023-05-07 09:10:05.592 DEBUG 2488 --- [hystrix-scw-project-7] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#all] connection: keep-alive
+2023-05-07 09:10:05.592 DEBUG 2488 --- [hystrix-scw-project-7] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#all] content-type: application/json
+2023-05-07 09:10:05.592 DEBUG 2488 --- [hystrix-scw-project-7] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#all] date: Sun, 07 May 2023 01:10:05 GMT
+2023-05-07 09:10:05.592 DEBUG 2488 --- [hystrix-scw-project-7] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#all] keep-alive: timeout=60
+2023-05-07 09:10:05.592 DEBUG 2488 --- [hystrix-scw-project-7] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#all] transfer-encoding: chunked
+2023-05-07 09:10:05.592 DEBUG 2488 --- [hystrix-scw-project-7] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#all] 
+2023-05-07 09:10:05.593 DEBUG 2488 --- [hystrix-scw-project-7] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#all] {"code":0,"msg":"操作成功","data":[{"memberid":3,"id":6,"name":"第1个项目","remark":"非常棒的项目","headerImage":null,"money":50000,"createdate":"2020-01-11 13:08:57","follower":88},{"memberid":6,"id":7,"name":"测试项目","remark":"这是一个好项目","headerImage":null,"money":100000,"createdate":"2020-06-16 06:50:04","follower":100},{"memberid":8,"id":8,"name":"鉴赏","remark":"用心去看","headerImage":null,"money":2000000,"createdate":"2021-12-23 18:54:31","follower":66},{"memberid":9,"id":9,"name":"aaaa","remark":"FfF","headerImage":null,"money":10,"createdate":"2023-02-01 17:51:53","follower":34},{"memberid":9,"id":13,"name":"测试项目4","remark":"测试4","headerImage":null,"money":10000,"createdate":"2023-02-23 17:42:00","follower":1},{"memberid":9,"id":14,"name":"ER儿童机器人","remark":"儿童好伙伴","headerImage":null,"money":1999,"createdate":"2023-02-23 17:42:00","follower":100},{"memberid":9,"id":15,"name":"智能夜灯","remark":"给您家人最贴心的关怀","headerImage":null,"money":38888,"createdate":"2023-02-25 17:42:00","follower":105},{"memberid":9,"id":16,"name":"PM2.5空气质量检测仪","remark":"您的健康生活小助手","headerImage":null,"money":58888,"createdate":"2023-02-25 17:42:00","follower":108},{"memberid":9,"id":23,"name":"测试报告项目","remark":"这个是测试项目","headerImage":null,"money":100,"createdate":"2023-03-26 00:54:36","follower":null}]}
+2023-05-07 09:10:05.593 DEBUG 2488 --- [hystrix-scw-project-7] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#all] <--- END HTTP (1456-byte body)
+2023-05-07 09:11:12.818  INFO 2488 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-05-07 09:16:12.830  INFO 2488 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-05-07 09:21:38.524  INFO 2488 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-05-07 09:22:10.758 DEBUG 2488 --- [hystrix-scw-project-8] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#detailsInfo] ---> GET http://scw-project/project/details/info/14 HTTP/1.1
+2023-05-07 09:22:10.759 DEBUG 2488 --- [hystrix-scw-project-8] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#detailsInfo] ---> END HTTP (0-byte body)
+2023-05-07 09:22:10.792 DEBUG 2488 --- [hystrix-scw-project-8] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#detailsInfo] <--- HTTP/1.1 200 (33ms)
+2023-05-07 09:22:10.793 DEBUG 2488 --- [hystrix-scw-project-8] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#detailsInfo] connection: keep-alive
+2023-05-07 09:22:10.794 DEBUG 2488 --- [hystrix-scw-project-8] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#detailsInfo] content-type: application/json
+2023-05-07 09:22:10.794 DEBUG 2488 --- [hystrix-scw-project-8] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#detailsInfo] date: Sun, 07 May 2023 01:22:10 GMT
+2023-05-07 09:22:10.794 DEBUG 2488 --- [hystrix-scw-project-8] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#detailsInfo] keep-alive: timeout=60
+2023-05-07 09:22:10.794 DEBUG 2488 --- [hystrix-scw-project-8] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#detailsInfo] transfer-encoding: chunked
+2023-05-07 09:22:10.795 DEBUG 2488 --- [hystrix-scw-project-8] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#detailsInfo] 
+2023-05-07 09:22:10.796 DEBUG 2488 --- [hystrix-scw-project-8] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#detailsInfo] {"code":0,"msg":"操作成功","data":{"memberid":9,"id":14,"name":"ER儿童机器人","remark":"儿童好伙伴","money":null,"day":10,"status":"0","deploydate":"11","supportmoney":100000,"supporter":13,"completion":44,"follower":100,"headerImage":null,"detailsImage":["http://www.dongyimai.com/data/afficheimg/20200410tkhqmy.jpg","http://www.dongyimai.com/data/afficheimg/20190515rihdju.jpg","http://www.ujiuye.com/uploadfile/2020/0610/20200610060037292.jpg","http://www.ujiuye.com/uploadfile/2019/0809/20190809052021246.jpg","http://bu-guai.oss-cn-chengdu.aliyuncs.com/pic/xue.png","http://bu-guai.oss-cn-chengdu.aliyuncs.com/pic/xue.png","http://bu-guai.oss-cn-chengdu.aliyuncs.com/pic/xue.png","111","chengdu.aliyuncs.com/pic/xue.png","http://www.dongyimai.com/data/afficheimg/20190515rihdju.jpg"],"projectReturns":[{"id":12,"projectid":14,"type":"1","supportmoney":100,"content":"爱心公益","count":null,"signalpurchase":1,"purchase":10,"freight":0,"invoice":null,"rtndate":10}]}}
+2023-05-07 09:22:10.797 DEBUG 2488 --- [hystrix-scw-project-8] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#detailsInfo] <--- END HTTP (989-byte body)
+2023-05-07 09:22:18.379 DEBUG 2488 --- [hystrix-scw-project-9] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#returnInfo] ---> GET http://scw-project/project/returns/info/12 HTTP/1.1
+2023-05-07 09:22:18.380 DEBUG 2488 --- [hystrix-scw-project-9] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#returnInfo] ---> END HTTP (0-byte body)
+2023-05-07 09:22:18.398 DEBUG 2488 --- [hystrix-scw-project-9] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#returnInfo] <--- HTTP/1.1 200 (17ms)
+2023-05-07 09:22:18.398 DEBUG 2488 --- [hystrix-scw-project-9] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#returnInfo] connection: keep-alive
+2023-05-07 09:22:18.399 DEBUG 2488 --- [hystrix-scw-project-9] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#returnInfo] content-type: application/json
+2023-05-07 09:22:18.399 DEBUG 2488 --- [hystrix-scw-project-9] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#returnInfo] date: Sun, 07 May 2023 01:22:18 GMT
+2023-05-07 09:22:18.399 DEBUG 2488 --- [hystrix-scw-project-9] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#returnInfo] keep-alive: timeout=60
+2023-05-07 09:22:18.399 DEBUG 2488 --- [hystrix-scw-project-9] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#returnInfo] transfer-encoding: chunked
+2023-05-07 09:22:18.400 DEBUG 2488 --- [hystrix-scw-project-9] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#returnInfo] 
+2023-05-07 09:22:18.400 DEBUG 2488 --- [hystrix-scw-project-9] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#returnInfo] {"code":0,"msg":"操作成功","data":{"id":12,"projectid":14,"type":"1","supportmoney":100,"content":"爱心公益","count":null,"signalpurchase":1,"purchase":10,"freight":0,"invoice":null,"rtndate":10}}
+2023-05-07 09:22:18.400 DEBUG 2488 --- [hystrix-scw-project-9] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#returnInfo] <--- END HTTP (204-byte body)
+2023-05-07 09:22:18.405 DEBUG 2488 --- [hystrix-SCW-USER-2] com.deng.proj.feign.MemberServiceFeign   : [MemberServiceFeign#findUser] ---> GET http://SCW-USER/user/findUser/9 HTTP/1.1
+2023-05-07 09:22:18.406 DEBUG 2488 --- [hystrix-SCW-USER-2] com.deng.proj.feign.MemberServiceFeign   : [MemberServiceFeign#findUser] ---> END HTTP (0-byte body)
+2023-05-07 09:22:18.428 DEBUG 2488 --- [hystrix-SCW-USER-2] com.deng.proj.feign.MemberServiceFeign   : [MemberServiceFeign#findUser] <--- HTTP/1.1 200 (21ms)
+2023-05-07 09:22:18.429 DEBUG 2488 --- [hystrix-SCW-USER-2] com.deng.proj.feign.MemberServiceFeign   : [MemberServiceFeign#findUser] connection: keep-alive
+2023-05-07 09:22:18.429 DEBUG 2488 --- [hystrix-SCW-USER-2] com.deng.proj.feign.MemberServiceFeign   : [MemberServiceFeign#findUser] content-type: application/json
+2023-05-07 09:22:18.430 DEBUG 2488 --- [hystrix-SCW-USER-2] com.deng.proj.feign.MemberServiceFeign   : [MemberServiceFeign#findUser] date: Sun, 07 May 2023 01:22:18 GMT
+2023-05-07 09:22:18.431 DEBUG 2488 --- [hystrix-SCW-USER-2] com.deng.proj.feign.MemberServiceFeign   : [MemberServiceFeign#findUser] keep-alive: timeout=60
+2023-05-07 09:22:18.431 DEBUG 2488 --- [hystrix-SCW-USER-2] com.deng.proj.feign.MemberServiceFeign   : [MemberServiceFeign#findUser] transfer-encoding: chunked
+2023-05-07 09:22:18.432 DEBUG 2488 --- [hystrix-SCW-USER-2] com.deng.proj.feign.MemberServiceFeign   : [MemberServiceFeign#findUser] 
+2023-05-07 09:22:18.433 DEBUG 2488 --- [hystrix-SCW-USER-2] com.deng.proj.feign.MemberServiceFeign   : [MemberServiceFeign#findUser] {"code":0,"msg":"操作成功","data":{"id":9,"loginacct":"1234567","userpswd":"$2a$10$8IVphcO/Rq40fdjx1qTFQ.YVKXhO/Shnqxm2LcfuHWKxgoaBUMwjm","username":"高先生","email":"1234","authstatus":"0","usertype":"0","realname":"高老师","cardnum":null,"accttype":"2"}}
+2023-05-07 09:22:18.433 DEBUG 2488 --- [hystrix-SCW-USER-2] com.deng.proj.feign.MemberServiceFeign   : [MemberServiceFeign#findUser] <--- END HTTP (266-byte body)
+2023-05-07 09:22:27.637 DEBUG 2488 --- [hystrix-SCW-USER-3] com.deng.proj.feign.MemberServiceFeign   : [MemberServiceFeign#login] ---> POST http://SCW-USER/login?loginacct=17329347440&password=1234 HTTP/1.1
+2023-05-07 09:22:27.637 DEBUG 2488 --- [hystrix-SCW-USER-3] com.deng.proj.feign.MemberServiceFeign   : [MemberServiceFeign#login] ---> END HTTP (0-byte body)
+2023-05-07 09:22:28.083 DEBUG 2488 --- [hystrix-SCW-USER-3] com.deng.proj.feign.MemberServiceFeign   : [MemberServiceFeign#login] <--- HTTP/1.1 200 (445ms)
+2023-05-07 09:22:28.083 DEBUG 2488 --- [hystrix-SCW-USER-3] com.deng.proj.feign.MemberServiceFeign   : [MemberServiceFeign#login] connection: keep-alive
+2023-05-07 09:22:28.084 DEBUG 2488 --- [hystrix-SCW-USER-3] com.deng.proj.feign.MemberServiceFeign   : [MemberServiceFeign#login] content-type: application/json
+2023-05-07 09:22:28.084 DEBUG 2488 --- [hystrix-SCW-USER-3] com.deng.proj.feign.MemberServiceFeign   : [MemberServiceFeign#login] date: Sun, 07 May 2023 01:22:28 GMT
+2023-05-07 09:22:28.084 DEBUG 2488 --- [hystrix-SCW-USER-3] com.deng.proj.feign.MemberServiceFeign   : [MemberServiceFeign#login] keep-alive: timeout=60
+2023-05-07 09:22:28.085 DEBUG 2488 --- [hystrix-SCW-USER-3] com.deng.proj.feign.MemberServiceFeign   : [MemberServiceFeign#login] transfer-encoding: chunked
+2023-05-07 09:22:28.085 DEBUG 2488 --- [hystrix-SCW-USER-3] com.deng.proj.feign.MemberServiceFeign   : [MemberServiceFeign#login] 
+2023-05-07 09:22:28.085 DEBUG 2488 --- [hystrix-SCW-USER-3] com.deng.proj.feign.MemberServiceFeign   : [MemberServiceFeign#login] {"code":0,"msg":"登录成功","data":{"accessToken":"714c3bd235604c87807031efb87bc9ed","loginacct":"17329347440","username":"小云","email":"26293@qq.com","authstatus":"0","usertype":"0","realname":"云老师","cardnum":null,"accttype":"2"}}
+2023-05-07 09:22:28.086 DEBUG 2488 --- [hystrix-SCW-USER-3] com.deng.proj.feign.MemberServiceFeign   : [MemberServiceFeign#login] <--- END HTTP (243-byte body)
+2023-05-07 09:22:28.088  INFO 2488 --- [http-nio-8003-exec-6] c.d.p.controller.DispatcherController    : 用户名：17329347440,密码：1234
+2023-05-07 09:22:28.089  INFO 2488 --- [http-nio-8003-exec-6] c.d.p.controller.DispatcherController    : 登陆用户数据:UserRespVo(accessToken=714c3bd235604c87807031efb87bc9ed, loginacct=17329347440, username=小云, email=26293@qq.com, authstatus=0, usertype=0, realname=云老师, cardnum=null, accttype=2)
+2023-05-07 09:22:29.772 DEBUG 2488 --- [hystrix-scw-project-10] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#all] ---> GET http://scw-project/project/all HTTP/1.1
+2023-05-07 09:22:29.773 DEBUG 2488 --- [hystrix-scw-project-10] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#all] ---> END HTTP (0-byte body)
+2023-05-07 09:22:29.850 DEBUG 2488 --- [hystrix-scw-project-10] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#all] <--- HTTP/1.1 200 (76ms)
+2023-05-07 09:22:29.851 DEBUG 2488 --- [hystrix-scw-project-10] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#all] connection: keep-alive
+2023-05-07 09:22:29.851 DEBUG 2488 --- [hystrix-scw-project-10] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#all] content-type: application/json
+2023-05-07 09:22:29.851 DEBUG 2488 --- [hystrix-scw-project-10] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#all] date: Sun, 07 May 2023 01:22:29 GMT
+2023-05-07 09:22:29.851 DEBUG 2488 --- [hystrix-scw-project-10] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#all] keep-alive: timeout=60
+2023-05-07 09:22:29.852 DEBUG 2488 --- [hystrix-scw-project-10] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#all] transfer-encoding: chunked
+2023-05-07 09:22:29.852 DEBUG 2488 --- [hystrix-scw-project-10] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#all] 
+2023-05-07 09:22:29.852 DEBUG 2488 --- [hystrix-scw-project-10] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#all] {"code":0,"msg":"操作成功","data":[{"memberid":3,"id":6,"name":"第1个项目","remark":"非常棒的项目","headerImage":null,"money":50000,"createdate":"2020-01-11 13:08:57","follower":88},{"memberid":6,"id":7,"name":"测试项目","remark":"这是一个好项目","headerImage":null,"money":100000,"createdate":"2020-06-16 06:50:04","follower":100},{"memberid":8,"id":8,"name":"鉴赏","remark":"用心去看","headerImage":null,"money":2000000,"createdate":"2021-12-23 18:54:31","follower":66},{"memberid":9,"id":9,"name":"aaaa","remark":"FfF","headerImage":null,"money":10,"createdate":"2023-02-01 17:51:53","follower":34},{"memberid":9,"id":13,"name":"测试项目4","remark":"测试4","headerImage":null,"money":10000,"createdate":"2023-02-23 17:42:00","follower":1},{"memberid":9,"id":14,"name":"ER儿童机器人","remark":"儿童好伙伴","headerImage":null,"money":1999,"createdate":"2023-02-23 17:42:00","follower":100},{"memberid":9,"id":15,"name":"智能夜灯","remark":"给您家人最贴心的关怀","headerImage":null,"money":38888,"createdate":"2023-02-25 17:42:00","follower":105},{"memberid":9,"id":16,"name":"PM2.5空气质量检测仪","remark":"您的健康生活小助手","headerImage":null,"money":58888,"createdate":"2023-02-25 17:42:00","follower":108},{"memberid":9,"id":23,"name":"测试报告项目","remark":"这个是测试项目","headerImage":null,"money":100,"createdate":"2023-03-26 00:54:36","follower":null}]}
+2023-05-07 09:22:29.853 DEBUG 2488 --- [hystrix-scw-project-10] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#all] <--- END HTTP (1456-byte body)
+2023-05-07 09:22:33.872 DEBUG 2488 --- [hystrix-scw-order-1] com.deng.proj.feign.OrderServiceFeign    : [OrderServiceFeign#findall] ---> POST http://scw-order/order/all HTTP/1.1
+2023-05-07 09:22:33.873 DEBUG 2488 --- [hystrix-scw-order-1] com.deng.proj.feign.OrderServiceFeign    : [OrderServiceFeign#findall] Content-Length: 32
+2023-05-07 09:22:33.873 DEBUG 2488 --- [hystrix-scw-order-1] com.deng.proj.feign.OrderServiceFeign    : [OrderServiceFeign#findall] Content-Type: text/plain;charset=UTF-8
+2023-05-07 09:22:33.873 DEBUG 2488 --- [hystrix-scw-order-1] com.deng.proj.feign.OrderServiceFeign    : [OrderServiceFeign#findall] 
+2023-05-07 09:22:33.873 DEBUG 2488 --- [hystrix-scw-order-1] com.deng.proj.feign.OrderServiceFeign    : [OrderServiceFeign#findall] 714c3bd235604c87807031efb87bc9ed
+2023-05-07 09:22:33.873 DEBUG 2488 --- [hystrix-scw-order-1] com.deng.proj.feign.OrderServiceFeign    : [OrderServiceFeign#findall] ---> END HTTP (32-byte body)
+2023-05-07 09:22:33.966  INFO 2488 --- [hystrix-scw-order-1] c.netflix.config.ChainedDynamicProperty  : Flipping property: scw-order.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2023-05-07 09:22:33.969  INFO 2488 --- [hystrix-scw-order-1] c.n.u.concurrent.ShutdownEnabledTimer    : Shutdown hook installed for: NFLoadBalancer-PingTimer-scw-order
+2023-05-07 09:22:33.969  INFO 2488 --- [hystrix-scw-order-1] c.netflix.loadbalancer.BaseLoadBalancer  : Client: scw-order instantiated a LoadBalancer: DynamicServerListLoadBalancer:{NFLoadBalancer:name=scw-order,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:null
+2023-05-07 09:22:33.971  INFO 2488 --- [hystrix-scw-order-1] c.n.l.DynamicServerListLoadBalancer      : Using serverListUpdater PollingServerListUpdater
+2023-05-07 09:22:33.973  INFO 2488 --- [hystrix-scw-order-1] c.netflix.config.ChainedDynamicProperty  : Flipping property: scw-order.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2023-05-07 09:22:33.975  INFO 2488 --- [hystrix-scw-order-1] c.n.l.DynamicServerListLoadBalancer      : DynamicServerListLoadBalancer for client scw-order initialized: DynamicServerListLoadBalancer:{NFLoadBalancer:name=scw-order,current list of Servers=[192.168.46.1:8002],Load balancer stats=Zone stats: {defaultzone=[Zone:defaultzone;	Instance count:1;	Active connections count: 0;	Circuit breaker tripped count: 0;	Active connections per server: 0.0;]
+},Server stats: [[Server:192.168.46.1:8002;	Zone:defaultZone;	Total Requests:0;	Successive connection failure:0;	Total blackout seconds:0;	Last connection made:Thu Jan 01 08:00:00 CST 1970;	First connection made: Thu Jan 01 08:00:00 CST 1970;	Active Connections:0;	total failure count in last (1000) msecs:0;	average resp time:0.0;	90 percentile resp time:0.0;	95 percentile resp time:0.0;	min resp time:0.0;	max resp time:0.0;	stddev resp time:0.0]
+]}ServerList:org.springframework.cloud.netflix.ribbon.eureka.DomainExtractingServerList@a951365
+2023-05-07 09:22:34.522 DEBUG 2488 --- [hystrix-scw-order-1] com.deng.proj.feign.OrderServiceFeign    : [OrderServiceFeign#findall] <--- HTTP/1.1 200 (648ms)
+2023-05-07 09:22:34.523 DEBUG 2488 --- [hystrix-scw-order-1] com.deng.proj.feign.OrderServiceFeign    : [OrderServiceFeign#findall] connection: keep-alive
+2023-05-07 09:22:34.523 DEBUG 2488 --- [hystrix-scw-order-1] com.deng.proj.feign.OrderServiceFeign    : [OrderServiceFeign#findall] content-type: application/json
+2023-05-07 09:22:34.524 DEBUG 2488 --- [hystrix-scw-order-1] com.deng.proj.feign.OrderServiceFeign    : [OrderServiceFeign#findall] date: Sun, 07 May 2023 01:22:34 GMT
+2023-05-07 09:22:34.524 DEBUG 2488 --- [hystrix-scw-order-1] com.deng.proj.feign.OrderServiceFeign    : [OrderServiceFeign#findall] keep-alive: timeout=60
+2023-05-07 09:22:34.524 DEBUG 2488 --- [hystrix-scw-order-1] com.deng.proj.feign.OrderServiceFeign    : [OrderServiceFeign#findall] transfer-encoding: chunked
+2023-05-07 09:22:34.524 DEBUG 2488 --- [hystrix-scw-order-1] com.deng.proj.feign.OrderServiceFeign    : [OrderServiceFeign#findall] 
+2023-05-07 09:22:34.543 DEBUG 2488 --- [hystrix-scw-order-1] com.deng.proj.feign.OrderServiceFeign    : [OrderServiceFeign#findall] {"code":0,"msg":"操作成功","data":[{"name":"智能夜灯","id":50,"memberid":12,"projectid":15,"returnid":13,"ordernum":"00769c9e863d4815bfa3482268290269","createdate":"2023-03-29 15:57:22","money":292,"rtncount":1,"status":"0","address":"郑州","invoice":null,"invoictitle":"1","remark":"无"},{"name":"ER儿童机器人","id":49,"memberid":12,"projectid":14,"returnid":12,"ordernum":"758fb5360dc946b4b962638c888879c4","createdate":"2023-03-29 15:50:51","money":100,"rtncount":1,"status":"0","address":"郑州西亚斯,","invoice":null,"invoictitle":"","remark":""}]}
+2023-05-07 09:22:34.543 DEBUG 2488 --- [hystrix-scw-order-1] com.deng.proj.feign.OrderServiceFeign    : [OrderServiceFeign#findall] <--- END HTTP (573-byte body)
+2023-05-07 09:22:34.984  INFO 2488 --- [PollingServerListUpdater-0] c.netflix.config.ChainedDynamicProperty  : Flipping property: scw-order.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2023-05-07 09:22:38.482 DEBUG 2488 --- [hystrix-scw-project-10] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#all] ---> GET http://scw-project/project/all HTTP/1.1
+2023-05-07 09:22:38.483 DEBUG 2488 --- [hystrix-scw-project-10] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#all] ---> END HTTP (0-byte body)
+2023-05-07 09:22:38.557 DEBUG 2488 --- [hystrix-scw-project-10] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#all] <--- HTTP/1.1 200 (73ms)
+2023-05-07 09:22:38.557 DEBUG 2488 --- [hystrix-scw-project-10] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#all] connection: keep-alive
+2023-05-07 09:22:38.557 DEBUG 2488 --- [hystrix-scw-project-10] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#all] content-type: application/json
+2023-05-07 09:22:38.558 DEBUG 2488 --- [hystrix-scw-project-10] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#all] date: Sun, 07 May 2023 01:22:38 GMT
+2023-05-07 09:22:38.558 DEBUG 2488 --- [hystrix-scw-project-10] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#all] keep-alive: timeout=60
+2023-05-07 09:22:38.558 DEBUG 2488 --- [hystrix-scw-project-10] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#all] transfer-encoding: chunked
+2023-05-07 09:22:38.558 DEBUG 2488 --- [hystrix-scw-project-10] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#all] 
+2023-05-07 09:22:38.558 DEBUG 2488 --- [hystrix-scw-project-10] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#all] {"code":0,"msg":"操作成功","data":[{"memberid":3,"id":6,"name":"第1个项目","remark":"非常棒的项目","headerImage":null,"money":50000,"createdate":"2020-01-11 13:08:57","follower":88},{"memberid":6,"id":7,"name":"测试项目","remark":"这是一个好项目","headerImage":null,"money":100000,"createdate":"2020-06-16 06:50:04","follower":100},{"memberid":8,"id":8,"name":"鉴赏","remark":"用心去看","headerImage":null,"money":2000000,"createdate":"2021-12-23 18:54:31","follower":66},{"memberid":9,"id":9,"name":"aaaa","remark":"FfF","headerImage":null,"money":10,"createdate":"2023-02-01 17:51:53","follower":34},{"memberid":9,"id":13,"name":"测试项目4","remark":"测试4","headerImage":null,"money":10000,"createdate":"2023-02-23 17:42:00","follower":1},{"memberid":9,"id":14,"name":"ER儿童机器人","remark":"儿童好伙伴","headerImage":null,"money":1999,"createdate":"2023-02-23 17:42:00","follower":100},{"memberid":9,"id":15,"name":"智能夜灯","remark":"给您家人最贴心的关怀","headerImage":null,"money":38888,"createdate":"2023-02-25 17:42:00","follower":105},{"memberid":9,"id":16,"name":"PM2.5空气质量检测仪","remark":"您的健康生活小助手","headerImage":null,"money":58888,"createdate":"2023-02-25 17:42:00","follower":108},{"memberid":9,"id":23,"name":"测试报告项目","remark":"这个是测试项目","headerImage":null,"money":100,"createdate":"2023-03-26 00:54:36","follower":null}]}
+2023-05-07 09:22:38.558 DEBUG 2488 --- [hystrix-scw-project-10] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#all] <--- END HTTP (1456-byte body)
+2023-05-07 09:22:39.694 DEBUG 2488 --- [hystrix-scw-project-10] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#detailsInfo] ---> GET http://scw-project/project/details/info/14 HTTP/1.1
+2023-05-07 09:22:39.694 DEBUG 2488 --- [hystrix-scw-project-10] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#detailsInfo] ---> END HTTP (0-byte body)
+2023-05-07 09:22:39.720 DEBUG 2488 --- [hystrix-scw-project-10] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#detailsInfo] <--- HTTP/1.1 200 (25ms)
+2023-05-07 09:22:39.721 DEBUG 2488 --- [hystrix-scw-project-10] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#detailsInfo] connection: keep-alive
+2023-05-07 09:22:39.721 DEBUG 2488 --- [hystrix-scw-project-10] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#detailsInfo] content-type: application/json
+2023-05-07 09:22:39.721 DEBUG 2488 --- [hystrix-scw-project-10] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#detailsInfo] date: Sun, 07 May 2023 01:22:39 GMT
+2023-05-07 09:22:39.722 DEBUG 2488 --- [hystrix-scw-project-10] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#detailsInfo] keep-alive: timeout=60
+2023-05-07 09:22:39.722 DEBUG 2488 --- [hystrix-scw-project-10] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#detailsInfo] transfer-encoding: chunked
+2023-05-07 09:22:39.722 DEBUG 2488 --- [hystrix-scw-project-10] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#detailsInfo] 
+2023-05-07 09:22:39.722 DEBUG 2488 --- [hystrix-scw-project-10] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#detailsInfo] {"code":0,"msg":"操作成功","data":{"memberid":9,"id":14,"name":"ER儿童机器人","remark":"儿童好伙伴","money":null,"day":10,"status":"0","deploydate":"11","supportmoney":100000,"supporter":13,"completion":44,"follower":100,"headerImage":null,"detailsImage":["http://www.dongyimai.com/data/afficheimg/20200410tkhqmy.jpg","http://www.dongyimai.com/data/afficheimg/20190515rihdju.jpg","http://www.ujiuye.com/uploadfile/2020/0610/20200610060037292.jpg","http://www.ujiuye.com/uploadfile/2019/0809/20190809052021246.jpg","http://bu-guai.oss-cn-chengdu.aliyuncs.com/pic/xue.png","http://bu-guai.oss-cn-chengdu.aliyuncs.com/pic/xue.png","http://bu-guai.oss-cn-chengdu.aliyuncs.com/pic/xue.png","111","chengdu.aliyuncs.com/pic/xue.png","http://www.dongyimai.com/data/afficheimg/20190515rihdju.jpg"],"projectReturns":[{"id":12,"projectid":14,"type":"1","supportmoney":100,"content":"爱心公益","count":null,"signalpurchase":1,"purchase":10,"freight":0,"invoice":null,"rtndate":10}]}}
+2023-05-07 09:22:39.722 DEBUG 2488 --- [hystrix-scw-project-10] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#detailsInfo] <--- END HTTP (989-byte body)
+2023-05-07 09:22:43.238 DEBUG 2488 --- [hystrix-scw-project-10] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#returnInfo] ---> GET http://scw-project/project/returns/info/12 HTTP/1.1
+2023-05-07 09:22:43.239 DEBUG 2488 --- [hystrix-scw-project-10] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#returnInfo] ---> END HTTP (0-byte body)
+2023-05-07 09:22:43.258 DEBUG 2488 --- [hystrix-scw-project-10] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#returnInfo] <--- HTTP/1.1 200 (18ms)
+2023-05-07 09:22:43.259 DEBUG 2488 --- [hystrix-scw-project-10] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#returnInfo] connection: keep-alive
+2023-05-07 09:22:43.259 DEBUG 2488 --- [hystrix-scw-project-10] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#returnInfo] content-type: application/json
+2023-05-07 09:22:43.259 DEBUG 2488 --- [hystrix-scw-project-10] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#returnInfo] date: Sun, 07 May 2023 01:22:43 GMT
+2023-05-07 09:22:43.259 DEBUG 2488 --- [hystrix-scw-project-10] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#returnInfo] keep-alive: timeout=60
+2023-05-07 09:22:43.259 DEBUG 2488 --- [hystrix-scw-project-10] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#returnInfo] transfer-encoding: chunked
+2023-05-07 09:22:43.259 DEBUG 2488 --- [hystrix-scw-project-10] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#returnInfo] 
+2023-05-07 09:22:43.260 DEBUG 2488 --- [hystrix-scw-project-10] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#returnInfo] {"code":0,"msg":"操作成功","data":{"id":12,"projectid":14,"type":"1","supportmoney":100,"content":"爱心公益","count":null,"signalpurchase":1,"purchase":10,"freight":0,"invoice":null,"rtndate":10}}
+2023-05-07 09:22:43.260 DEBUG 2488 --- [hystrix-scw-project-10] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#returnInfo] <--- END HTTP (204-byte body)
+2023-05-07 09:22:43.265 DEBUG 2488 --- [hystrix-SCW-USER-4] com.deng.proj.feign.MemberServiceFeign   : [MemberServiceFeign#findUser] ---> GET http://SCW-USER/user/findUser/9 HTTP/1.1
+2023-05-07 09:22:43.265 DEBUG 2488 --- [hystrix-SCW-USER-4] com.deng.proj.feign.MemberServiceFeign   : [MemberServiceFeign#findUser] ---> END HTTP (0-byte body)
+2023-05-07 09:22:43.283 DEBUG 2488 --- [hystrix-SCW-USER-4] com.deng.proj.feign.MemberServiceFeign   : [MemberServiceFeign#findUser] <--- HTTP/1.1 200 (17ms)
+2023-05-07 09:22:43.283 DEBUG 2488 --- [hystrix-SCW-USER-4] com.deng.proj.feign.MemberServiceFeign   : [MemberServiceFeign#findUser] connection: keep-alive
+2023-05-07 09:22:43.283 DEBUG 2488 --- [hystrix-SCW-USER-4] com.deng.proj.feign.MemberServiceFeign   : [MemberServiceFeign#findUser] content-type: application/json
+2023-05-07 09:22:43.284 DEBUG 2488 --- [hystrix-SCW-USER-4] com.deng.proj.feign.MemberServiceFeign   : [MemberServiceFeign#findUser] date: Sun, 07 May 2023 01:22:43 GMT
+2023-05-07 09:22:43.284 DEBUG 2488 --- [hystrix-SCW-USER-4] com.deng.proj.feign.MemberServiceFeign   : [MemberServiceFeign#findUser] keep-alive: timeout=60
+2023-05-07 09:22:43.284 DEBUG 2488 --- [hystrix-SCW-USER-4] com.deng.proj.feign.MemberServiceFeign   : [MemberServiceFeign#findUser] transfer-encoding: chunked
+2023-05-07 09:22:43.285 DEBUG 2488 --- [hystrix-SCW-USER-4] com.deng.proj.feign.MemberServiceFeign   : [MemberServiceFeign#findUser] 
+2023-05-07 09:22:43.285 DEBUG 2488 --- [hystrix-SCW-USER-4] com.deng.proj.feign.MemberServiceFeign   : [MemberServiceFeign#findUser] {"code":0,"msg":"操作成功","data":{"id":9,"loginacct":"1234567","userpswd":"$2a$10$8IVphcO/Rq40fdjx1qTFQ.YVKXhO/Shnqxm2LcfuHWKxgoaBUMwjm","username":"高先生","email":"1234","authstatus":"0","usertype":"0","realname":"高老师","cardnum":null,"accttype":"2"}}
+2023-05-07 09:22:43.285 DEBUG 2488 --- [hystrix-SCW-USER-4] com.deng.proj.feign.MemberServiceFeign   : [MemberServiceFeign#findUser] <--- END HTTP (266-byte body)
+2023-05-07 09:22:54.044 DEBUG 2488 --- [hystrix-SCW-USER-5] com.deng.proj.feign.MemberServiceFeign   : [MemberServiceFeign#address] ---> GET http://SCW-USER/address?accessToken=714c3bd235604c87807031efb87bc9ed HTTP/1.1
+2023-05-07 09:22:54.045 DEBUG 2488 --- [hystrix-SCW-USER-5] com.deng.proj.feign.MemberServiceFeign   : [MemberServiceFeign#address] ---> END HTTP (0-byte body)
+2023-05-07 09:22:54.108 DEBUG 2488 --- [hystrix-SCW-USER-5] com.deng.proj.feign.MemberServiceFeign   : [MemberServiceFeign#address] <--- HTTP/1.1 200 (63ms)
+2023-05-07 09:22:54.109 DEBUG 2488 --- [hystrix-SCW-USER-5] com.deng.proj.feign.MemberServiceFeign   : [MemberServiceFeign#address] connection: keep-alive
+2023-05-07 09:22:54.109 DEBUG 2488 --- [hystrix-SCW-USER-5] com.deng.proj.feign.MemberServiceFeign   : [MemberServiceFeign#address] content-type: application/json
+2023-05-07 09:22:54.109 DEBUG 2488 --- [hystrix-SCW-USER-5] com.deng.proj.feign.MemberServiceFeign   : [MemberServiceFeign#address] date: Sun, 07 May 2023 01:22:54 GMT
+2023-05-07 09:22:54.109 DEBUG 2488 --- [hystrix-SCW-USER-5] com.deng.proj.feign.MemberServiceFeign   : [MemberServiceFeign#address] keep-alive: timeout=60
+2023-05-07 09:22:54.109 DEBUG 2488 --- [hystrix-SCW-USER-5] com.deng.proj.feign.MemberServiceFeign   : [MemberServiceFeign#address] transfer-encoding: chunked
+2023-05-07 09:22:54.109 DEBUG 2488 --- [hystrix-SCW-USER-5] com.deng.proj.feign.MemberServiceFeign   : [MemberServiceFeign#address] 
+2023-05-07 09:22:54.109 DEBUG 2488 --- [hystrix-SCW-USER-5] com.deng.proj.feign.MemberServiceFeign   : [MemberServiceFeign#address] {"code":0,"msg":"操作成功","data":[{"id":5,"memberid":12,"address":"郑州西亚斯"},{"id":6,"memberid":12,"address":"南阳"}]}
+2023-05-07 09:22:54.110 DEBUG 2488 --- [hystrix-SCW-USER-5] com.deng.proj.feign.MemberServiceFeign   : [MemberServiceFeign#address] <--- END HTTP (133-byte body)
+2023-05-07 09:22:58.352 DEBUG 2488 --- [hystrix-scw-order-2] com.deng.proj.feign.OrderServiceFeign    : [OrderServiceFeign#createOrder] ---> POST http://scw-order/order/save HTTP/1.1
+2023-05-07 09:22:58.352 DEBUG 2488 --- [hystrix-scw-order-2] com.deng.proj.feign.OrderServiceFeign    : [OrderServiceFeign#createOrder] Content-Length: 153
+2023-05-07 09:22:58.352 DEBUG 2488 --- [hystrix-scw-order-2] com.deng.proj.feign.OrderServiceFeign    : [OrderServiceFeign#createOrder] Content-Type: application/json
+2023-05-07 09:22:58.352 DEBUG 2488 --- [hystrix-scw-order-2] com.deng.proj.feign.OrderServiceFeign    : [OrderServiceFeign#createOrder] 
+2023-05-07 09:22:58.352 DEBUG 2488 --- [hystrix-scw-order-2] com.deng.proj.feign.OrderServiceFeign    : [OrderServiceFeign#createOrder] {"address":"南阳,","invoice":0,"invoictitle":"","remark":"","rtncount":1,"accessToken":"714c3bd235604c87807031efb87bc9ed","projectid":14,"returnid":12}
+2023-05-07 09:22:58.352 DEBUG 2488 --- [hystrix-scw-order-2] com.deng.proj.feign.OrderServiceFeign    : [OrderServiceFeign#createOrder] ---> END HTTP (153-byte body)
+2023-05-07 09:22:59.453 DEBUG 2488 --- [hystrix-scw-order-2] com.deng.proj.feign.OrderServiceFeign    : [OrderServiceFeign#createOrder] <--- HTTP/1.1 200 (1100ms)
+2023-05-07 09:22:59.454 DEBUG 2488 --- [hystrix-scw-order-2] com.deng.proj.feign.OrderServiceFeign    : [OrderServiceFeign#createOrder] connection: keep-alive
+2023-05-07 09:22:59.454 DEBUG 2488 --- [hystrix-scw-order-2] com.deng.proj.feign.OrderServiceFeign    : [OrderServiceFeign#createOrder] content-type: application/json
+2023-05-07 09:22:59.454 DEBUG 2488 --- [hystrix-scw-order-2] com.deng.proj.feign.OrderServiceFeign    : [OrderServiceFeign#createOrder] date: Sun, 07 May 2023 01:22:59 GMT
+2023-05-07 09:22:59.454 DEBUG 2488 --- [hystrix-scw-order-2] com.deng.proj.feign.OrderServiceFeign    : [OrderServiceFeign#createOrder] keep-alive: timeout=60
+2023-05-07 09:22:59.454 DEBUG 2488 --- [hystrix-scw-order-2] com.deng.proj.feign.OrderServiceFeign    : [OrderServiceFeign#createOrder] transfer-encoding: chunked
+2023-05-07 09:22:59.455 DEBUG 2488 --- [hystrix-scw-order-2] com.deng.proj.feign.OrderServiceFeign    : [OrderServiceFeign#createOrder] 
+2023-05-07 09:22:59.455 DEBUG 2488 --- [hystrix-scw-order-2] com.deng.proj.feign.OrderServiceFeign    : [OrderServiceFeign#createOrder] {"code":0,"msg":"操作成功","data":{"id":53,"memberid":12,"projectid":14,"returnid":12,"ordernum":"1dfbc435e153401ab0e6be9db8df6c35","createdate":"2023-05-07 09:22:58","money":100,"rtncount":1,"status":"0","address":"南阳,","invoice":null,"invoictitle":"","remark":""}}
+2023-05-07 09:22:59.455 DEBUG 2488 --- [hystrix-scw-order-2] com.deng.proj.feign.OrderServiceFeign    : [OrderServiceFeign#createOrder] <--- END HTTP (274-byte body)
+2023-05-07 09:22:59.760 DEBUG 2488 --- [hystrix-scw-order-3] com.deng.proj.feign.OrderServiceFeign    : [OrderServiceFeign#findall] ---> POST http://scw-order/order/all HTTP/1.1
+2023-05-07 09:22:59.760 DEBUG 2488 --- [hystrix-scw-order-3] com.deng.proj.feign.OrderServiceFeign    : [OrderServiceFeign#findall] Content-Length: 32
+2023-05-07 09:22:59.760 DEBUG 2488 --- [hystrix-scw-order-3] com.deng.proj.feign.OrderServiceFeign    : [OrderServiceFeign#findall] Content-Type: text/plain;charset=UTF-8
+2023-05-07 09:22:59.760 DEBUG 2488 --- [hystrix-scw-order-3] com.deng.proj.feign.OrderServiceFeign    : [OrderServiceFeign#findall] 
+2023-05-07 09:22:59.760 DEBUG 2488 --- [hystrix-scw-order-3] com.deng.proj.feign.OrderServiceFeign    : [OrderServiceFeign#findall] 714c3bd235604c87807031efb87bc9ed
+2023-05-07 09:22:59.760 DEBUG 2488 --- [hystrix-scw-order-3] com.deng.proj.feign.OrderServiceFeign    : [OrderServiceFeign#findall] ---> END HTTP (32-byte body)
+2023-05-07 09:22:59.784 DEBUG 2488 --- [hystrix-scw-order-3] com.deng.proj.feign.OrderServiceFeign    : [OrderServiceFeign#findall] <--- HTTP/1.1 200 (23ms)
+2023-05-07 09:22:59.784 DEBUG 2488 --- [hystrix-scw-order-3] com.deng.proj.feign.OrderServiceFeign    : [OrderServiceFeign#findall] connection: keep-alive
+2023-05-07 09:22:59.785 DEBUG 2488 --- [hystrix-scw-order-3] com.deng.proj.feign.OrderServiceFeign    : [OrderServiceFeign#findall] content-type: application/json
+2023-05-07 09:22:59.785 DEBUG 2488 --- [hystrix-scw-order-3] com.deng.proj.feign.OrderServiceFeign    : [OrderServiceFeign#findall] date: Sun, 07 May 2023 01:22:59 GMT
+2023-05-07 09:22:59.785 DEBUG 2488 --- [hystrix-scw-order-3] com.deng.proj.feign.OrderServiceFeign    : [OrderServiceFeign#findall] keep-alive: timeout=60
+2023-05-07 09:22:59.785 DEBUG 2488 --- [hystrix-scw-order-3] com.deng.proj.feign.OrderServiceFeign    : [OrderServiceFeign#findall] transfer-encoding: chunked
+2023-05-07 09:22:59.785 DEBUG 2488 --- [hystrix-scw-order-3] com.deng.proj.feign.OrderServiceFeign    : [OrderServiceFeign#findall] 
+2023-05-07 09:22:59.785 DEBUG 2488 --- [hystrix-scw-order-3] com.deng.proj.feign.OrderServiceFeign    : [OrderServiceFeign#findall] {"code":0,"msg":"操作成功","data":[{"name":"ER儿童机器人","id":53,"memberid":12,"projectid":14,"returnid":12,"ordernum":"1dfbc435e153401ab0e6be9db8df6c35","createdate":"2023-05-07 09:22:58","money":100,"rtncount":1,"status":"0","address":"南阳,","invoice":null,"invoictitle":"","remark":""},{"name":"智能夜灯","id":50,"memberid":12,"projectid":15,"returnid":13,"ordernum":"00769c9e863d4815bfa3482268290269","createdate":"2023-03-29 15:57:22","money":292,"rtncount":1,"status":"0","address":"郑州","invoice":null,"invoictitle":"1","remark":"无"},{"name":"ER儿童机器人","id":49,"memberid":12,"projectid":14,"returnid":12,"ordernum":"758fb5360dc946b4b962638c888879c4","createdate":"2023-03-29 15:50:51","money":100,"rtncount":1,"status":"0","address":"郑州西亚斯,","invoice":null,"invoictitle":"","remark":""}]}
+2023-05-07 09:22:59.786 DEBUG 2488 --- [hystrix-scw-order-3] com.deng.proj.feign.OrderServiceFeign    : [OrderServiceFeign#findall] <--- END HTTP (836-byte body)
+2023-05-07 09:23:07.227 DEBUG 2488 --- [hystrix-scw-project-10] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#all] ---> GET http://scw-project/project/all HTTP/1.1
+2023-05-07 09:23:07.228 DEBUG 2488 --- [hystrix-scw-project-10] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#all] ---> END HTTP (0-byte body)
+2023-05-07 09:23:07.299 DEBUG 2488 --- [hystrix-scw-project-10] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#all] <--- HTTP/1.1 200 (70ms)
+2023-05-07 09:23:07.299 DEBUG 2488 --- [hystrix-scw-project-10] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#all] connection: keep-alive
+2023-05-07 09:23:07.300 DEBUG 2488 --- [hystrix-scw-project-10] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#all] content-type: application/json
+2023-05-07 09:23:07.300 DEBUG 2488 --- [hystrix-scw-project-10] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#all] date: Sun, 07 May 2023 01:23:07 GMT
+2023-05-07 09:23:07.300 DEBUG 2488 --- [hystrix-scw-project-10] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#all] keep-alive: timeout=60
+2023-05-07 09:23:07.300 DEBUG 2488 --- [hystrix-scw-project-10] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#all] transfer-encoding: chunked
+2023-05-07 09:23:07.300 DEBUG 2488 --- [hystrix-scw-project-10] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#all] 
+2023-05-07 09:23:07.301 DEBUG 2488 --- [hystrix-scw-project-10] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#all] {"code":0,"msg":"操作成功","data":[{"memberid":3,"id":6,"name":"第1个项目","remark":"非常棒的项目","headerImage":null,"money":50000,"createdate":"2020-01-11 13:08:57","follower":88},{"memberid":6,"id":7,"name":"测试项目","remark":"这是一个好项目","headerImage":null,"money":100000,"createdate":"2020-06-16 06:50:04","follower":100},{"memberid":8,"id":8,"name":"鉴赏","remark":"用心去看","headerImage":null,"money":2000000,"createdate":"2021-12-23 18:54:31","follower":66},{"memberid":9,"id":9,"name":"aaaa","remark":"FfF","headerImage":null,"money":10,"createdate":"2023-02-01 17:51:53","follower":34},{"memberid":9,"id":13,"name":"测试项目4","remark":"测试4","headerImage":null,"money":10000,"createdate":"2023-02-23 17:42:00","follower":1},{"memberid":9,"id":14,"name":"ER儿童机器人","remark":"儿童好伙伴","headerImage":null,"money":1999,"createdate":"2023-02-23 17:42:00","follower":100},{"memberid":9,"id":15,"name":"智能夜灯","remark":"给您家人最贴心的关怀","headerImage":null,"money":38888,"createdate":"2023-02-25 17:42:00","follower":105},{"memberid":9,"id":16,"name":"PM2.5空气质量检测仪","remark":"您的健康生活小助手","headerImage":null,"money":58888,"createdate":"2023-02-25 17:42:00","follower":108},{"memberid":9,"id":23,"name":"测试报告项目","remark":"这个是测试项目","headerImage":null,"money":100,"createdate":"2023-03-26 00:54:36","follower":null}]}
+2023-05-07 09:23:07.301 DEBUG 2488 --- [hystrix-scw-project-10] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#all] <--- END HTTP (1456-byte body)
+2023-05-07 09:23:16.349 DEBUG 2488 --- [hystrix-scw-project-10] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#all] ---> GET http://scw-project/project/all HTTP/1.1
+2023-05-07 09:23:16.350 DEBUG 2488 --- [hystrix-scw-project-10] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#all] ---> END HTTP (0-byte body)
+2023-05-07 09:23:16.431 DEBUG 2488 --- [hystrix-scw-project-10] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#all] <--- HTTP/1.1 200 (81ms)
+2023-05-07 09:23:16.432 DEBUG 2488 --- [hystrix-scw-project-10] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#all] connection: keep-alive
+2023-05-07 09:23:16.432 DEBUG 2488 --- [hystrix-scw-project-10] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#all] content-type: application/json
+2023-05-07 09:23:16.432 DEBUG 2488 --- [hystrix-scw-project-10] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#all] date: Sun, 07 May 2023 01:23:16 GMT
+2023-05-07 09:23:16.432 DEBUG 2488 --- [hystrix-scw-project-10] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#all] keep-alive: timeout=60
+2023-05-07 09:23:16.432 DEBUG 2488 --- [hystrix-scw-project-10] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#all] transfer-encoding: chunked
+2023-05-07 09:23:16.432 DEBUG 2488 --- [hystrix-scw-project-10] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#all] 
+2023-05-07 09:23:16.433 DEBUG 2488 --- [hystrix-scw-project-10] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#all] {"code":0,"msg":"操作成功","data":[{"memberid":3,"id":6,"name":"第1个项目","remark":"非常棒的项目","headerImage":null,"money":50000,"createdate":"2020-01-11 13:08:57","follower":88},{"memberid":6,"id":7,"name":"测试项目","remark":"这是一个好项目","headerImage":null,"money":100000,"createdate":"2020-06-16 06:50:04","follower":100},{"memberid":8,"id":8,"name":"鉴赏","remark":"用心去看","headerImage":null,"money":2000000,"createdate":"2021-12-23 18:54:31","follower":66},{"memberid":9,"id":9,"name":"aaaa","remark":"FfF","headerImage":null,"money":10,"createdate":"2023-02-01 17:51:53","follower":34},{"memberid":9,"id":13,"name":"测试项目4","remark":"测试4","headerImage":null,"money":10000,"createdate":"2023-02-23 17:42:00","follower":1},{"memberid":9,"id":14,"name":"ER儿童机器人","remark":"儿童好伙伴","headerImage":null,"money":1999,"createdate":"2023-02-23 17:42:00","follower":100},{"memberid":9,"id":15,"name":"智能夜灯","remark":"给您家人最贴心的关怀","headerImage":null,"money":38888,"createdate":"2023-02-25 17:42:00","follower":105},{"memberid":9,"id":16,"name":"PM2.5空气质量检测仪","remark":"您的健康生活小助手","headerImage":null,"money":58888,"createdate":"2023-02-25 17:42:00","follower":108},{"memberid":9,"id":23,"name":"测试报告项目","remark":"这个是测试项目","headerImage":null,"money":100,"createdate":"2023-03-26 00:54:36","follower":null}]}
+2023-05-07 09:23:16.433 DEBUG 2488 --- [hystrix-scw-project-10] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#all] <--- END HTTP (1456-byte body)
+2023-05-07 09:23:43.699 DEBUG 2488 --- [hystrix-SCW-USER-6] com.deng.proj.feign.MemberServiceFeign   : [MemberServiceFeign#sendCode] ---> POST http://SCW-USER/sendCode?loginacct=17329347440 HTTP/1.1
+2023-05-07 09:23:43.700 DEBUG 2488 --- [hystrix-SCW-USER-6] com.deng.proj.feign.MemberServiceFeign   : [MemberServiceFeign#sendCode] ---> END HTTP (0-byte body)
+2023-05-07 09:23:43.942 DEBUG 2488 --- [hystrix-SCW-USER-6] com.deng.proj.feign.MemberServiceFeign   : [MemberServiceFeign#sendCode] <--- HTTP/1.1 200 (241ms)
+2023-05-07 09:23:43.943 DEBUG 2488 --- [hystrix-SCW-USER-6] com.deng.proj.feign.MemberServiceFeign   : [MemberServiceFeign#sendCode] connection: keep-alive
+2023-05-07 09:23:43.943 DEBUG 2488 --- [hystrix-SCW-USER-6] com.deng.proj.feign.MemberServiceFeign   : [MemberServiceFeign#sendCode] content-type: application/json
+2023-05-07 09:23:43.943 DEBUG 2488 --- [hystrix-SCW-USER-6] com.deng.proj.feign.MemberServiceFeign   : [MemberServiceFeign#sendCode] date: Sun, 07 May 2023 01:23:43 GMT
+2023-05-07 09:23:43.943 DEBUG 2488 --- [hystrix-SCW-USER-6] com.deng.proj.feign.MemberServiceFeign   : [MemberServiceFeign#sendCode] keep-alive: timeout=60
+2023-05-07 09:23:43.943 DEBUG 2488 --- [hystrix-SCW-USER-6] com.deng.proj.feign.MemberServiceFeign   : [MemberServiceFeign#sendCode] transfer-encoding: chunked
+2023-05-07 09:23:43.943 DEBUG 2488 --- [hystrix-SCW-USER-6] com.deng.proj.feign.MemberServiceFeign   : [MemberServiceFeign#sendCode] 
+2023-05-07 09:23:43.944 DEBUG 2488 --- [hystrix-SCW-USER-6] com.deng.proj.feign.MemberServiceFeign   : [MemberServiceFeign#sendCode] {"code":0,"msg":"操作成功","data":"验证码发送成功，请注意查收"}
+2023-05-07 09:23:43.944 DEBUG 2488 --- [hystrix-SCW-USER-6] com.deng.proj.feign.MemberServiceFeign   : [MemberServiceFeign#sendCode] <--- END HTTP (80-byte body)
+2023-05-07 09:23:43.955 ERROR 2488 --- [http-nio-8003-exec-6] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-8003-exec-6] Exception processing template "sendCode": Error resolving template [sendCode], template might not exist or might not be accessible by any of the configured Template Resolvers
+
+org.thymeleaf.exceptions.TemplateInputException: Error resolving template [sendCode], template might not exist or might not be accessible by any of the configured Template Resolvers
+	at org.thymeleaf.engine.TemplateManager.resolveTemplate(TemplateManager.java:869) ~[thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:607) ~[thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098) [thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072) [thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:362) [thymeleaf-spring5-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:189) [thymeleaf-spring5-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1373) [spring-webmvc-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1118) [spring-webmvc-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1057) [spring-webmvc-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943) [spring-webmvc-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) [spring-webmvc-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) [spring-webmvc-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) [spring-webmvc-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) [tomcat-embed-websocket-9.0.30.jar:9.0.30]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) [spring-web-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) [spring-web-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.springframework.session.web.http.SessionRepositoryFilter.doFilterInternal(SessionRepositoryFilter.java:141) [spring-session-core-2.2.0.RELEASE.jar:2.2.0.RELEASE]
+	at org.springframework.session.web.http.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:82) [spring-session-core-2.2.0.RELEASE.jar:2.2.0.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:108) [spring-boot-actuator-2.2.4.RELEASE.jar:2.2.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) [spring-web-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:367) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:860) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1598) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_40]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_40]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_40]
+
+2023-05-07 09:23:43.971 ERROR 2488 --- [http-nio-8003-exec-6] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateInputException: Error resolving template [sendCode], template might not exist or might not be accessible by any of the configured Template Resolvers] with root cause
+
+org.thymeleaf.exceptions.TemplateInputException: Error resolving template [sendCode], template might not exist or might not be accessible by any of the configured Template Resolvers
+	at org.thymeleaf.engine.TemplateManager.resolveTemplate(TemplateManager.java:869) ~[thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:607) ~[thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098) ~[thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072) ~[thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:362) ~[thymeleaf-spring5-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:189) ~[thymeleaf-spring5-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1373) ~[spring-webmvc-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1118) ~[spring-webmvc-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1057) ~[spring-webmvc-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943) ~[spring-webmvc-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) ~[spring-webmvc-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660) ~[tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741) ~[tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.30.jar:9.0.30]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.springframework.session.web.http.SessionRepositoryFilter.doFilterInternal(SessionRepositoryFilter.java:141) ~[spring-session-core-2.2.0.RELEASE.jar:2.2.0.RELEASE]
+	at org.springframework.session.web.http.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:82) ~[spring-session-core-2.2.0.RELEASE.jar:2.2.0.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:108) ~[spring-boot-actuator-2.2.4.RELEASE.jar:2.2.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) ~[tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:367) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:860) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1598) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_40]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_40]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_40]
+
+2023-05-07 09:24:06.055 DEBUG 2488 --- [hystrix-SCW-USER-7] com.deng.proj.feign.MemberServiceFeign   : [MemberServiceFeign#regist] ---> POST http://SCW-USER/regist HTTP/1.1
+2023-05-07 09:24:06.055 DEBUG 2488 --- [hystrix-SCW-USER-7] com.deng.proj.feign.MemberServiceFeign   : [MemberServiceFeign#regist] Content-Length: 105
+2023-05-07 09:24:06.055 DEBUG 2488 --- [hystrix-SCW-USER-7] com.deng.proj.feign.MemberServiceFeign   : [MemberServiceFeign#regist] Content-Type: application/json
+2023-05-07 09:24:06.055 DEBUG 2488 --- [hystrix-SCW-USER-7] com.deng.proj.feign.MemberServiceFeign   : [MemberServiceFeign#regist] 
+2023-05-07 09:24:06.055 DEBUG 2488 --- [hystrix-SCW-USER-7] com.deng.proj.feign.MemberServiceFeign   : [MemberServiceFeign#regist] {"loginacct":"17329347440","userpswd":"12345","code":"8285","email":null,"realname":null,"username":null}
+2023-05-07 09:24:06.056 DEBUG 2488 --- [hystrix-SCW-USER-7] com.deng.proj.feign.MemberServiceFeign   : [MemberServiceFeign#regist] ---> END HTTP (105-byte body)
+2023-05-07 09:24:06.317 DEBUG 2488 --- [hystrix-SCW-USER-7] com.deng.proj.feign.MemberServiceFeign   : [MemberServiceFeign#regist] <--- HTTP/1.1 200 (260ms)
+2023-05-07 09:24:06.317 DEBUG 2488 --- [hystrix-SCW-USER-7] com.deng.proj.feign.MemberServiceFeign   : [MemberServiceFeign#regist] connection: keep-alive
+2023-05-07 09:24:06.317 DEBUG 2488 --- [hystrix-SCW-USER-7] com.deng.proj.feign.MemberServiceFeign   : [MemberServiceFeign#regist] content-type: application/json
+2023-05-07 09:24:06.317 DEBUG 2488 --- [hystrix-SCW-USER-7] com.deng.proj.feign.MemberServiceFeign   : [MemberServiceFeign#regist] date: Sun, 07 May 2023 01:24:06 GMT
+2023-05-07 09:24:06.317 DEBUG 2488 --- [hystrix-SCW-USER-7] com.deng.proj.feign.MemberServiceFeign   : [MemberServiceFeign#regist] keep-alive: timeout=60
+2023-05-07 09:24:06.317 DEBUG 2488 --- [hystrix-SCW-USER-7] com.deng.proj.feign.MemberServiceFeign   : [MemberServiceFeign#regist] transfer-encoding: chunked
+2023-05-07 09:24:06.318 DEBUG 2488 --- [hystrix-SCW-USER-7] com.deng.proj.feign.MemberServiceFeign   : [MemberServiceFeign#regist] 
+2023-05-07 09:24:06.319 DEBUG 2488 --- [hystrix-SCW-USER-7] com.deng.proj.feign.MemberServiceFeign   : [MemberServiceFeign#regist] {"code":0,"msg":"操作成功","data":"用户操作成功！"}
+2023-05-07 09:24:06.319 DEBUG 2488 --- [hystrix-SCW-USER-7] com.deng.proj.feign.MemberServiceFeign   : [MemberServiceFeign#regist] <--- END HTTP (62-byte body)
+2023-05-07 09:24:10.421 DEBUG 2488 --- [hystrix-scw-project-10] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#all] ---> GET http://scw-project/project/all HTTP/1.1
+2023-05-07 09:24:10.422 DEBUG 2488 --- [hystrix-scw-project-10] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#all] ---> END HTTP (0-byte body)
+2023-05-07 09:24:10.492 DEBUG 2488 --- [hystrix-scw-project-10] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#all] <--- HTTP/1.1 200 (69ms)
+2023-05-07 09:24:10.493 DEBUG 2488 --- [hystrix-scw-project-10] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#all] connection: keep-alive
+2023-05-07 09:24:10.493 DEBUG 2488 --- [hystrix-scw-project-10] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#all] content-type: application/json
+2023-05-07 09:24:10.493 DEBUG 2488 --- [hystrix-scw-project-10] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#all] date: Sun, 07 May 2023 01:24:10 GMT
+2023-05-07 09:24:10.493 DEBUG 2488 --- [hystrix-scw-project-10] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#all] keep-alive: timeout=60
+2023-05-07 09:24:10.493 DEBUG 2488 --- [hystrix-scw-project-10] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#all] transfer-encoding: chunked
+2023-05-07 09:24:10.493 DEBUG 2488 --- [hystrix-scw-project-10] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#all] 
+2023-05-07 09:24:10.493 DEBUG 2488 --- [hystrix-scw-project-10] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#all] {"code":0,"msg":"操作成功","data":[{"memberid":3,"id":6,"name":"第1个项目","remark":"非常棒的项目","headerImage":null,"money":50000,"createdate":"2020-01-11 13:08:57","follower":88},{"memberid":6,"id":7,"name":"测试项目","remark":"这是一个好项目","headerImage":null,"money":100000,"createdate":"2020-06-16 06:50:04","follower":100},{"memberid":8,"id":8,"name":"鉴赏","remark":"用心去看","headerImage":null,"money":2000000,"createdate":"2021-12-23 18:54:31","follower":66},{"memberid":9,"id":9,"name":"aaaa","remark":"FfF","headerImage":null,"money":10,"createdate":"2023-02-01 17:51:53","follower":34},{"memberid":9,"id":13,"name":"测试项目4","remark":"测试4","headerImage":null,"money":10000,"createdate":"2023-02-23 17:42:00","follower":1},{"memberid":9,"id":14,"name":"ER儿童机器人","remark":"儿童好伙伴","headerImage":null,"money":1999,"createdate":"2023-02-23 17:42:00","follower":100},{"memberid":9,"id":15,"name":"智能夜灯","remark":"给您家人最贴心的关怀","headerImage":null,"money":38888,"createdate":"2023-02-25 17:42:00","follower":105},{"memberid":9,"id":16,"name":"PM2.5空气质量检测仪","remark":"您的健康生活小助手","headerImage":null,"money":58888,"createdate":"2023-02-25 17:42:00","follower":108},{"memberid":9,"id":23,"name":"测试报告项目","remark":"这个是测试项目","headerImage":null,"money":100,"createdate":"2023-03-26 00:54:36","follower":null}]}
+2023-05-07 09:24:10.494 DEBUG 2488 --- [hystrix-scw-project-10] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#all] <--- END HTTP (1456-byte body)
+2023-05-07 09:24:24.444 DEBUG 2488 --- [hystrix-SCW-USER-8] com.deng.proj.feign.MemberServiceFeign   : [MemberServiceFeign#login] ---> POST http://SCW-USER/login?loginacct=17329347440&password=12345 HTTP/1.1
+2023-05-07 09:24:24.444 DEBUG 2488 --- [hystrix-SCW-USER-8] com.deng.proj.feign.MemberServiceFeign   : [MemberServiceFeign#login] ---> END HTTP (0-byte body)
+2023-05-07 09:24:24.585 DEBUG 2488 --- [hystrix-SCW-USER-8] com.deng.proj.feign.MemberServiceFeign   : [MemberServiceFeign#login] <--- HTTP/1.1 200 (140ms)
+2023-05-07 09:24:24.585 DEBUG 2488 --- [hystrix-SCW-USER-8] com.deng.proj.feign.MemberServiceFeign   : [MemberServiceFeign#login] connection: keep-alive
+2023-05-07 09:24:24.585 DEBUG 2488 --- [hystrix-SCW-USER-8] com.deng.proj.feign.MemberServiceFeign   : [MemberServiceFeign#login] content-type: application/json
+2023-05-07 09:24:24.585 DEBUG 2488 --- [hystrix-SCW-USER-8] com.deng.proj.feign.MemberServiceFeign   : [MemberServiceFeign#login] date: Sun, 07 May 2023 01:24:24 GMT
+2023-05-07 09:24:24.585 DEBUG 2488 --- [hystrix-SCW-USER-8] com.deng.proj.feign.MemberServiceFeign   : [MemberServiceFeign#login] keep-alive: timeout=60
+2023-05-07 09:24:24.585 DEBUG 2488 --- [hystrix-SCW-USER-8] com.deng.proj.feign.MemberServiceFeign   : [MemberServiceFeign#login] transfer-encoding: chunked
+2023-05-07 09:24:24.586 DEBUG 2488 --- [hystrix-SCW-USER-8] com.deng.proj.feign.MemberServiceFeign   : [MemberServiceFeign#login] 
+2023-05-07 09:24:24.586 DEBUG 2488 --- [hystrix-SCW-USER-8] com.deng.proj.feign.MemberServiceFeign   : [MemberServiceFeign#login] {"code":0,"msg":"登录成功","data":{"accessToken":"f557cb1238a14bd99bf2f03bbf34337d","loginacct":"17329347440","username":"小云","email":"26293@qq.com","authstatus":"0","usertype":"0","realname":"云老师","cardnum":null,"accttype":"2"}}
+2023-05-07 09:24:24.586 DEBUG 2488 --- [hystrix-SCW-USER-8] com.deng.proj.feign.MemberServiceFeign   : [MemberServiceFeign#login] <--- END HTTP (243-byte body)
+2023-05-07 09:24:24.590  INFO 2488 --- [http-nio-8003-exec-3] c.d.p.controller.DispatcherController    : 用户名：17329347440,密码：12345
+2023-05-07 09:24:24.591  INFO 2488 --- [http-nio-8003-exec-3] c.d.p.controller.DispatcherController    : 登陆用户数据:UserRespVo(accessToken=f557cb1238a14bd99bf2f03bbf34337d, loginacct=17329347440, username=小云, email=26293@qq.com, authstatus=0, usertype=0, realname=云老师, cardnum=null, accttype=2)
+2023-05-07 09:24:26.229 DEBUG 2488 --- [hystrix-scw-project-10] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#all] ---> GET http://scw-project/project/all HTTP/1.1
+2023-05-07 09:24:26.229 DEBUG 2488 --- [hystrix-scw-project-10] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#all] ---> END HTTP (0-byte body)
+2023-05-07 09:24:26.302 DEBUG 2488 --- [hystrix-scw-project-10] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#all] <--- HTTP/1.1 200 (72ms)
+2023-05-07 09:24:26.302 DEBUG 2488 --- [hystrix-scw-project-10] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#all] connection: keep-alive
+2023-05-07 09:24:26.302 DEBUG 2488 --- [hystrix-scw-project-10] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#all] content-type: application/json
+2023-05-07 09:24:26.302 DEBUG 2488 --- [hystrix-scw-project-10] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#all] date: Sun, 07 May 2023 01:24:26 GMT
+2023-05-07 09:24:26.303 DEBUG 2488 --- [hystrix-scw-project-10] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#all] keep-alive: timeout=60
+2023-05-07 09:24:26.303 DEBUG 2488 --- [hystrix-scw-project-10] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#all] transfer-encoding: chunked
+2023-05-07 09:24:26.303 DEBUG 2488 --- [hystrix-scw-project-10] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#all] 
+2023-05-07 09:24:26.303 DEBUG 2488 --- [hystrix-scw-project-10] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#all] {"code":0,"msg":"操作成功","data":[{"memberid":3,"id":6,"name":"第1个项目","remark":"非常棒的项目","headerImage":null,"money":50000,"createdate":"2020-01-11 13:08:57","follower":88},{"memberid":6,"id":7,"name":"测试项目","remark":"这是一个好项目","headerImage":null,"money":100000,"createdate":"2020-06-16 06:50:04","follower":100},{"memberid":8,"id":8,"name":"鉴赏","remark":"用心去看","headerImage":null,"money":2000000,"createdate":"2021-12-23 18:54:31","follower":66},{"memberid":9,"id":9,"name":"aaaa","remark":"FfF","headerImage":null,"money":10,"createdate":"2023-02-01 17:51:53","follower":34},{"memberid":9,"id":13,"name":"测试项目4","remark":"测试4","headerImage":null,"money":10000,"createdate":"2023-02-23 17:42:00","follower":1},{"memberid":9,"id":14,"name":"ER儿童机器人","remark":"儿童好伙伴","headerImage":null,"money":1999,"createdate":"2023-02-23 17:42:00","follower":100},{"memberid":9,"id":15,"name":"智能夜灯","remark":"给您家人最贴心的关怀","headerImage":null,"money":38888,"createdate":"2023-02-25 17:42:00","follower":105},{"memberid":9,"id":16,"name":"PM2.5空气质量检测仪","remark":"您的健康生活小助手","headerImage":null,"money":58888,"createdate":"2023-02-25 17:42:00","follower":108},{"memberid":9,"id":23,"name":"测试报告项目","remark":"这个是测试项目","headerImage":null,"money":100,"createdate":"2023-03-26 00:54:36","follower":null}]}
+2023-05-07 09:24:26.303 DEBUG 2488 --- [hystrix-scw-project-10] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#all] <--- END HTTP (1456-byte body)
+2023-05-07 09:24:29.115 DEBUG 2488 --- [hystrix-scw-project-10] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#init] ---> POST http://scw-project/project/init HTTP/1.1
+2023-05-07 09:24:29.116 DEBUG 2488 --- [hystrix-scw-project-10] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#init] Content-Length: 50
+2023-05-07 09:24:29.116 DEBUG 2488 --- [hystrix-scw-project-10] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#init] Content-Type: application/json
+2023-05-07 09:24:29.116 DEBUG 2488 --- [hystrix-scw-project-10] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#init] 
+2023-05-07 09:24:29.116 DEBUG 2488 --- [hystrix-scw-project-10] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#init] {"accessToken":"f557cb1238a14bd99bf2f03bbf34337d"}
+2023-05-07 09:24:29.116 DEBUG 2488 --- [hystrix-scw-project-10] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#init] ---> END HTTP (50-byte body)
+2023-05-07 09:24:29.343 DEBUG 2488 --- [hystrix-scw-project-10] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#init] <--- HTTP/1.1 200 (226ms)
+2023-05-07 09:24:29.343 DEBUG 2488 --- [hystrix-scw-project-10] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#init] connection: keep-alive
+2023-05-07 09:24:29.343 DEBUG 2488 --- [hystrix-scw-project-10] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#init] content-type: application/json
+2023-05-07 09:24:29.343 DEBUG 2488 --- [hystrix-scw-project-10] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#init] date: Sun, 07 May 2023 01:24:29 GMT
+2023-05-07 09:24:29.343 DEBUG 2488 --- [hystrix-scw-project-10] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#init] keep-alive: timeout=60
+2023-05-07 09:24:29.343 DEBUG 2488 --- [hystrix-scw-project-10] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#init] transfer-encoding: chunked
+2023-05-07 09:24:29.343 DEBUG 2488 --- [hystrix-scw-project-10] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#init] 
+2023-05-07 09:24:29.343 DEBUG 2488 --- [hystrix-scw-project-10] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#init] {"code":0,"msg":"操作成功","data":"5883967feb8e4485af10af3e1669838e"}
+2023-05-07 09:24:29.343 DEBUG 2488 --- [hystrix-scw-project-10] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#init] <--- END HTTP (73-byte body)
+2023-05-07 09:24:35.364 DEBUG 2488 --- [hystrix-scw-project-10] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#saveBaseInfo] ---> POST http://scw-project/project/saveBaseInfo HTTP/1.1
+2023-05-07 09:24:35.364 DEBUG 2488 --- [hystrix-scw-project-10] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#saveBaseInfo] Content-Length: 259
+2023-05-07 09:24:35.364 DEBUG 2488 --- [hystrix-scw-project-10] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#saveBaseInfo] Content-Type: application/json
+2023-05-07 09:24:35.365 DEBUG 2488 --- [hystrix-scw-project-10] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#saveBaseInfo] 
+2023-05-07 09:24:35.365 DEBUG 2488 --- [hystrix-scw-project-10] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#saveBaseInfo] {"accessToken":"f557cb1238a14bd99bf2f03bbf34337d","projectToken":"5883967feb8e4485af10af3e1669838e","typeids":null,"tagids":null,"name":"1","remark":"","money":1,"day":null,"headerImage":null,"detailsImage":null,"supporter":null,"supportmoney":1,"status":"0"}
+2023-05-07 09:24:35.365 DEBUG 2488 --- [hystrix-scw-project-10] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#saveBaseInfo] ---> END HTTP (259-byte body)
+2023-05-07 09:24:35.450 DEBUG 2488 --- [hystrix-scw-project-10] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#saveBaseInfo] <--- HTTP/1.1 200 (85ms)
+2023-05-07 09:24:35.451 DEBUG 2488 --- [hystrix-scw-project-10] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#saveBaseInfo] connection: keep-alive
+2023-05-07 09:24:35.451 DEBUG 2488 --- [hystrix-scw-project-10] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#saveBaseInfo] content-type: application/json
+2023-05-07 09:24:35.451 DEBUG 2488 --- [hystrix-scw-project-10] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#saveBaseInfo] date: Sun, 07 May 2023 01:24:35 GMT
+2023-05-07 09:24:35.451 DEBUG 2488 --- [hystrix-scw-project-10] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#saveBaseInfo] keep-alive: timeout=60
+2023-05-07 09:24:35.451 DEBUG 2488 --- [hystrix-scw-project-10] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#saveBaseInfo] transfer-encoding: chunked
+2023-05-07 09:24:35.451 DEBUG 2488 --- [hystrix-scw-project-10] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#saveBaseInfo] 
+2023-05-07 09:24:35.452 DEBUG 2488 --- [hystrix-scw-project-10] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#saveBaseInfo] {"code":0,"msg":"操作成功","data":"ok"}
+2023-05-07 09:24:35.452 DEBUG 2488 --- [hystrix-scw-project-10] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#saveBaseInfo] <--- END HTTP (43-byte body)
+2023-05-07 09:24:37.150 DEBUG 2488 --- [hystrix-scw-project-10] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#saveReturnInfo] ---> POST http://scw-project/project/saveReturn HTTP/1.1
+2023-05-07 09:24:37.150 DEBUG 2488 --- [hystrix-scw-project-10] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#saveReturnInfo] Content-Length: 227
+2023-05-07 09:24:37.151 DEBUG 2488 --- [hystrix-scw-project-10] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#saveReturnInfo] Content-Type: application/json
+2023-05-07 09:24:37.151 DEBUG 2488 --- [hystrix-scw-project-10] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#saveReturnInfo] 
+2023-05-07 09:24:37.151 DEBUG 2488 --- [hystrix-scw-project-10] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#saveReturnInfo] [{"accessToken":null,"projectToken":"5883967feb8e4485af10af3e1669838e","id":null,"projectId":null,"type":null,"supportmoney":null,"content":"","signalpurchase":null,"purchase":null,"freight":null,"invoice":null,"rtndate":null}]
+2023-05-07 09:24:37.151 DEBUG 2488 --- [hystrix-scw-project-10] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#saveReturnInfo] ---> END HTTP (227-byte body)
+2023-05-07 09:24:37.204 DEBUG 2488 --- [hystrix-scw-project-10] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#saveReturnInfo] <--- HTTP/1.1 200 (52ms)
+2023-05-07 09:24:37.204 DEBUG 2488 --- [hystrix-scw-project-10] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#saveReturnInfo] connection: keep-alive
+2023-05-07 09:24:37.204 DEBUG 2488 --- [hystrix-scw-project-10] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#saveReturnInfo] content-type: application/json
+2023-05-07 09:24:37.204 DEBUG 2488 --- [hystrix-scw-project-10] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#saveReturnInfo] date: Sun, 07 May 2023 01:24:37 GMT
+2023-05-07 09:24:37.204 DEBUG 2488 --- [hystrix-scw-project-10] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#saveReturnInfo] keep-alive: timeout=60
+2023-05-07 09:24:37.204 DEBUG 2488 --- [hystrix-scw-project-10] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#saveReturnInfo] transfer-encoding: chunked
+2023-05-07 09:24:37.204 DEBUG 2488 --- [hystrix-scw-project-10] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#saveReturnInfo] 
+2023-05-07 09:24:37.206 DEBUG 2488 --- [hystrix-scw-project-10] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#saveReturnInfo] {"code":0,"msg":"操作成功","data":"ok"}
+2023-05-07 09:24:37.206 DEBUG 2488 --- [hystrix-scw-project-10] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#saveReturnInfo] <--- END HTTP (43-byte body)
+2023-05-07 09:24:37.570 DEBUG 2488 --- [hystrix-scw-project-10] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#submit] ---> POST http://scw-project/project/submit HTTP/1.1
+2023-05-07 09:24:37.570 DEBUG 2488 --- [hystrix-scw-project-10] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#submit] Content-Length: 108
+2023-05-07 09:24:37.570 DEBUG 2488 --- [hystrix-scw-project-10] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#submit] Content-Type: application/json
+2023-05-07 09:24:37.570 DEBUG 2488 --- [hystrix-scw-project-10] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#submit] 
+2023-05-07 09:24:37.570 DEBUG 2488 --- [hystrix-scw-project-10] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#submit] {"accessToken":"f557cb1238a14bd99bf2f03bbf34337d","projectToken":"5883967feb8e4485af10af3e1669838e","ops":1}
+2023-05-07 09:24:37.570 DEBUG 2488 --- [hystrix-scw-project-10] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#submit] ---> END HTTP (108-byte body)
+2023-05-07 09:24:37.728 DEBUG 2488 --- [hystrix-scw-project-10] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#submit] <--- HTTP/1.1 200 (157ms)
+2023-05-07 09:24:37.728 DEBUG 2488 --- [hystrix-scw-project-10] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#submit] connection: keep-alive
+2023-05-07 09:24:37.728 DEBUG 2488 --- [hystrix-scw-project-10] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#submit] content-type: application/json
+2023-05-07 09:24:37.728 DEBUG 2488 --- [hystrix-scw-project-10] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#submit] date: Sun, 07 May 2023 01:24:37 GMT
+2023-05-07 09:24:37.728 DEBUG 2488 --- [hystrix-scw-project-10] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#submit] keep-alive: timeout=60
+2023-05-07 09:24:37.728 DEBUG 2488 --- [hystrix-scw-project-10] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#submit] transfer-encoding: chunked
+2023-05-07 09:24:37.728 DEBUG 2488 --- [hystrix-scw-project-10] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#submit] 
+2023-05-07 09:24:37.729 DEBUG 2488 --- [hystrix-scw-project-10] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#submit] {"code":0,"msg":"操作成功","data":"保存成功过"}
+2023-05-07 09:24:37.729 DEBUG 2488 --- [hystrix-scw-project-10] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#submit] <--- END HTTP (56-byte body)
+2023-05-07 09:24:39.356 DEBUG 2488 --- [hystrix-scw-project-10] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#all] ---> GET http://scw-project/project/all HTTP/1.1
+2023-05-07 09:24:39.357 DEBUG 2488 --- [hystrix-scw-project-10] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#all] ---> END HTTP (0-byte body)
+2023-05-07 09:24:39.433 DEBUG 2488 --- [hystrix-scw-project-10] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#all] <--- HTTP/1.1 200 (76ms)
+2023-05-07 09:24:39.434 DEBUG 2488 --- [hystrix-scw-project-10] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#all] connection: keep-alive
+2023-05-07 09:24:39.434 DEBUG 2488 --- [hystrix-scw-project-10] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#all] content-type: application/json
+2023-05-07 09:24:39.434 DEBUG 2488 --- [hystrix-scw-project-10] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#all] date: Sun, 07 May 2023 01:24:39 GMT
+2023-05-07 09:24:39.434 DEBUG 2488 --- [hystrix-scw-project-10] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#all] keep-alive: timeout=60
+2023-05-07 09:24:39.434 DEBUG 2488 --- [hystrix-scw-project-10] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#all] transfer-encoding: chunked
+2023-05-07 09:24:39.434 DEBUG 2488 --- [hystrix-scw-project-10] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#all] 
+2023-05-07 09:24:39.434 DEBUG 2488 --- [hystrix-scw-project-10] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#all] {"code":0,"msg":"操作成功","data":[{"memberid":3,"id":6,"name":"第1个项目","remark":"非常棒的项目","headerImage":null,"money":50000,"createdate":"2020-01-11 13:08:57","follower":88},{"memberid":6,"id":7,"name":"测试项目","remark":"这是一个好项目","headerImage":null,"money":100000,"createdate":"2020-06-16 06:50:04","follower":100},{"memberid":8,"id":8,"name":"鉴赏","remark":"用心去看","headerImage":null,"money":2000000,"createdate":"2021-12-23 18:54:31","follower":66},{"memberid":9,"id":9,"name":"aaaa","remark":"FfF","headerImage":null,"money":10,"createdate":"2023-02-01 17:51:53","follower":34},{"memberid":9,"id":13,"name":"测试项目4","remark":"测试4","headerImage":null,"money":10000,"createdate":"2023-02-23 17:42:00","follower":1},{"memberid":9,"id":14,"name":"ER儿童机器人","remark":"儿童好伙伴","headerImage":null,"money":1999,"createdate":"2023-02-23 17:42:00","follower":100},{"memberid":9,"id":15,"name":"智能夜灯","remark":"给您家人最贴心的关怀","headerImage":null,"money":38888,"createdate":"2023-02-25 17:42:00","follower":105},{"memberid":9,"id":16,"name":"PM2.5空气质量检测仪","remark":"您的健康生活小助手","headerImage":null,"money":58888,"createdate":"2023-02-25 17:42:00","follower":108},{"memberid":9,"id":23,"name":"测试报告项目","remark":"这个是测试项目","headerImage":null,"money":100,"createdate":"2023-03-26 00:54:36","follower":null},{"memberid":12,"id":25,"name":"1","remark":"","headerImage":null,"money":1,"createdate":"2023-05-07 09:24:37","follower":null}]}
+2023-05-07 09:24:39.434 DEBUG 2488 --- [hystrix-scw-project-10] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#all] <--- END HTTP (1583-byte body)
+2023-05-07 09:26:38.541  INFO 2488 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-05-07 09:31:40.331  INFO 2488 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-05-07 09:32:18.979 DEBUG 2488 --- [hystrix-scw-project-10] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#detailsInfo] ---> GET http://scw-project/project/details/info/15 HTTP/1.1
+2023-05-07 09:32:18.979 DEBUG 2488 --- [hystrix-scw-project-10] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#detailsInfo] ---> END HTTP (0-byte body)
+2023-05-07 09:32:19.013 DEBUG 2488 --- [hystrix-scw-project-10] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#detailsInfo] <--- HTTP/1.1 200 (33ms)
+2023-05-07 09:32:19.014 DEBUG 2488 --- [hystrix-scw-project-10] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#detailsInfo] connection: keep-alive
+2023-05-07 09:32:19.014 DEBUG 2488 --- [hystrix-scw-project-10] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#detailsInfo] content-type: application/json
+2023-05-07 09:32:19.014 DEBUG 2488 --- [hystrix-scw-project-10] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#detailsInfo] date: Sun, 07 May 2023 01:32:19 GMT
+2023-05-07 09:32:19.015 DEBUG 2488 --- [hystrix-scw-project-10] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#detailsInfo] keep-alive: timeout=60
+2023-05-07 09:32:19.015 DEBUG 2488 --- [hystrix-scw-project-10] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#detailsInfo] transfer-encoding: chunked
+2023-05-07 09:32:19.015 DEBUG 2488 --- [hystrix-scw-project-10] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#detailsInfo] 
+2023-05-07 09:32:19.016 DEBUG 2488 --- [hystrix-scw-project-10] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#detailsInfo] {"code":0,"msg":"操作成功","data":{"memberid":9,"id":15,"name":"智能夜灯","remark":"给您家人最贴心的关怀","money":null,"day":50,"status":"2","deploydate":"111","supportmoney":30000,"supporter":13,"completion":46,"follower":105,"headerImage":null,"detailsImage":["http://www.dongyimai.com/data/afficheimg/20200410tkhqmy.jpg","http://www.dongyimai.com/data/afficheimg/20190515rihdju.jpg","http://www.ujiuye.com/uploadfile/2020/0610/20200610060037292.jpg","http://www.ujiuye.com/uploadfile/2019/0809/20190809052021246.jpg","http://bu-guai.oss-cn-chengdu.aliyuncs.com/pic/xue.png","http://bu-guai.oss-cn-chengdu.aliyuncs.com/pic/xue.png","http://bu-guai.oss-cn-chengdu.aliyuncs.com/pic/xue.png","111","chengdu.aliyuncs.com/pic/xue.png","http://www.dongyimai.com/data/afficheimg/20190515rihdju.jpg"],"projectReturns":[{"id":13,"projectid":15,"type":"1","supportmoney":264,"content":"买一送一","count":null,"signalpurchase":5,"purchase":10,"freight":28,"invoice":null,"rtndate":5}]}}
+2023-05-07 09:32:19.016 DEBUG 2488 --- [hystrix-scw-project-10] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#detailsInfo] <--- END HTTP (999-byte body)
+2023-05-07 09:32:22.957 DEBUG 2488 --- [hystrix-scw-project-10] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#returnInfo] ---> GET http://scw-project/project/returns/info/13 HTTP/1.1
+2023-05-07 09:32:22.958 DEBUG 2488 --- [hystrix-scw-project-10] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#returnInfo] ---> END HTTP (0-byte body)
+2023-05-07 09:32:22.986 DEBUG 2488 --- [hystrix-scw-project-10] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#returnInfo] <--- HTTP/1.1 200 (27ms)
+2023-05-07 09:32:22.987 DEBUG 2488 --- [hystrix-scw-project-10] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#returnInfo] connection: keep-alive
+2023-05-07 09:32:22.990 DEBUG 2488 --- [hystrix-scw-project-10] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#returnInfo] content-type: application/json
+2023-05-07 09:32:22.990 DEBUG 2488 --- [hystrix-scw-project-10] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#returnInfo] date: Sun, 07 May 2023 01:32:22 GMT
+2023-05-07 09:32:22.990 DEBUG 2488 --- [hystrix-scw-project-10] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#returnInfo] keep-alive: timeout=60
+2023-05-07 09:32:22.990 DEBUG 2488 --- [hystrix-scw-project-10] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#returnInfo] transfer-encoding: chunked
+2023-05-07 09:32:22.990 DEBUG 2488 --- [hystrix-scw-project-10] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#returnInfo] 
+2023-05-07 09:32:22.993 DEBUG 2488 --- [hystrix-scw-project-10] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#returnInfo] {"code":0,"msg":"操作成功","data":{"id":13,"projectid":15,"type":"1","supportmoney":264,"content":"买一送一","count":null,"signalpurchase":5,"purchase":10,"freight":28,"invoice":null,"rtndate":5}}
+2023-05-07 09:32:22.993 DEBUG 2488 --- [hystrix-scw-project-10] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#returnInfo] <--- END HTTP (204-byte body)
+2023-05-07 09:32:22.999 DEBUG 2488 --- [hystrix-SCW-USER-9] com.deng.proj.feign.MemberServiceFeign   : [MemberServiceFeign#findUser] ---> GET http://SCW-USER/user/findUser/9 HTTP/1.1
+2023-05-07 09:32:23.000 DEBUG 2488 --- [hystrix-SCW-USER-9] com.deng.proj.feign.MemberServiceFeign   : [MemberServiceFeign#findUser] ---> END HTTP (0-byte body)
+2023-05-07 09:32:23.025 DEBUG 2488 --- [hystrix-SCW-USER-9] com.deng.proj.feign.MemberServiceFeign   : [MemberServiceFeign#findUser] <--- HTTP/1.1 200 (25ms)
+2023-05-07 09:32:23.026 DEBUG 2488 --- [hystrix-SCW-USER-9] com.deng.proj.feign.MemberServiceFeign   : [MemberServiceFeign#findUser] connection: keep-alive
+2023-05-07 09:32:23.026 DEBUG 2488 --- [hystrix-SCW-USER-9] com.deng.proj.feign.MemberServiceFeign   : [MemberServiceFeign#findUser] content-type: application/json
+2023-05-07 09:32:23.026 DEBUG 2488 --- [hystrix-SCW-USER-9] com.deng.proj.feign.MemberServiceFeign   : [MemberServiceFeign#findUser] date: Sun, 07 May 2023 01:32:23 GMT
+2023-05-07 09:32:23.026 DEBUG 2488 --- [hystrix-SCW-USER-9] com.deng.proj.feign.MemberServiceFeign   : [MemberServiceFeign#findUser] keep-alive: timeout=60
+2023-05-07 09:32:23.026 DEBUG 2488 --- [hystrix-SCW-USER-9] com.deng.proj.feign.MemberServiceFeign   : [MemberServiceFeign#findUser] transfer-encoding: chunked
+2023-05-07 09:32:23.026 DEBUG 2488 --- [hystrix-SCW-USER-9] com.deng.proj.feign.MemberServiceFeign   : [MemberServiceFeign#findUser] 
+2023-05-07 09:32:23.028 DEBUG 2488 --- [hystrix-SCW-USER-9] com.deng.proj.feign.MemberServiceFeign   : [MemberServiceFeign#findUser] {"code":0,"msg":"操作成功","data":{"id":9,"loginacct":"1234567","userpswd":"$2a$10$8IVphcO/Rq40fdjx1qTFQ.YVKXhO/Shnqxm2LcfuHWKxgoaBUMwjm","username":"高先生","email":"1234","authstatus":"0","usertype":"0","realname":"高老师","cardnum":null,"accttype":"2"}}
+2023-05-07 09:32:23.029 DEBUG 2488 --- [hystrix-SCW-USER-9] com.deng.proj.feign.MemberServiceFeign   : [MemberServiceFeign#findUser] <--- END HTTP (266-byte body)
+2023-05-07 09:32:26.513 DEBUG 2488 --- [hystrix-SCW-USER-10] com.deng.proj.feign.MemberServiceFeign   : [MemberServiceFeign#address] ---> GET http://SCW-USER/address?accessToken=f557cb1238a14bd99bf2f03bbf34337d HTTP/1.1
+2023-05-07 09:32:26.513 DEBUG 2488 --- [hystrix-SCW-USER-10] com.deng.proj.feign.MemberServiceFeign   : [MemberServiceFeign#address] ---> END HTTP (0-byte body)
+2023-05-07 09:32:26.535 DEBUG 2488 --- [hystrix-SCW-USER-10] com.deng.proj.feign.MemberServiceFeign   : [MemberServiceFeign#address] <--- HTTP/1.1 200 (21ms)
+2023-05-07 09:32:26.536 DEBUG 2488 --- [hystrix-SCW-USER-10] com.deng.proj.feign.MemberServiceFeign   : [MemberServiceFeign#address] connection: keep-alive
+2023-05-07 09:32:26.537 DEBUG 2488 --- [hystrix-SCW-USER-10] com.deng.proj.feign.MemberServiceFeign   : [MemberServiceFeign#address] content-type: application/json
+2023-05-07 09:32:26.537 DEBUG 2488 --- [hystrix-SCW-USER-10] com.deng.proj.feign.MemberServiceFeign   : [MemberServiceFeign#address] date: Sun, 07 May 2023 01:32:26 GMT
+2023-05-07 09:32:26.537 DEBUG 2488 --- [hystrix-SCW-USER-10] com.deng.proj.feign.MemberServiceFeign   : [MemberServiceFeign#address] keep-alive: timeout=60
+2023-05-07 09:32:26.537 DEBUG 2488 --- [hystrix-SCW-USER-10] com.deng.proj.feign.MemberServiceFeign   : [MemberServiceFeign#address] transfer-encoding: chunked
+2023-05-07 09:32:26.537 DEBUG 2488 --- [hystrix-SCW-USER-10] com.deng.proj.feign.MemberServiceFeign   : [MemberServiceFeign#address] 
+2023-05-07 09:32:26.538 DEBUG 2488 --- [hystrix-SCW-USER-10] com.deng.proj.feign.MemberServiceFeign   : [MemberServiceFeign#address] {"code":0,"msg":"操作成功","data":[{"id":5,"memberid":12,"address":"郑州西亚斯"},{"id":6,"memberid":12,"address":"南阳"}]}
+2023-05-07 09:32:26.538 DEBUG 2488 --- [hystrix-SCW-USER-10] com.deng.proj.feign.MemberServiceFeign   : [MemberServiceFeign#address] <--- END HTTP (133-byte body)
+2023-05-07 09:32:39.418 DEBUG 2488 --- [hystrix-scw-order-4] com.deng.proj.feign.OrderServiceFeign    : [OrderServiceFeign#createOrder] ---> POST http://scw-order/order/save HTTP/1.1
+2023-05-07 09:32:39.418 DEBUG 2488 --- [hystrix-scw-order-4] com.deng.proj.feign.OrderServiceFeign    : [OrderServiceFeign#createOrder] Content-Length: 153
+2023-05-07 09:32:39.419 DEBUG 2488 --- [hystrix-scw-order-4] com.deng.proj.feign.OrderServiceFeign    : [OrderServiceFeign#createOrder] Content-Type: application/json
+2023-05-07 09:32:39.419 DEBUG 2488 --- [hystrix-scw-order-4] com.deng.proj.feign.OrderServiceFeign    : [OrderServiceFeign#createOrder] 
+2023-05-07 09:32:39.419 DEBUG 2488 --- [hystrix-scw-order-4] com.deng.proj.feign.OrderServiceFeign    : [OrderServiceFeign#createOrder] {"address":"南阳,","invoice":0,"invoictitle":"","remark":"","rtncount":1,"accessToken":"f557cb1238a14bd99bf2f03bbf34337d","projectid":15,"returnid":13}
+2023-05-07 09:32:39.419 DEBUG 2488 --- [hystrix-scw-order-4] com.deng.proj.feign.OrderServiceFeign    : [OrderServiceFeign#createOrder] ---> END HTTP (153-byte body)
+2023-05-07 09:32:39.504 DEBUG 2488 --- [hystrix-scw-order-4] com.deng.proj.feign.OrderServiceFeign    : [OrderServiceFeign#createOrder] <--- HTTP/1.1 200 (84ms)
+2023-05-07 09:32:39.504 DEBUG 2488 --- [hystrix-scw-order-4] com.deng.proj.feign.OrderServiceFeign    : [OrderServiceFeign#createOrder] connection: keep-alive
+2023-05-07 09:32:39.504 DEBUG 2488 --- [hystrix-scw-order-4] com.deng.proj.feign.OrderServiceFeign    : [OrderServiceFeign#createOrder] content-type: application/json
+2023-05-07 09:32:39.504 DEBUG 2488 --- [hystrix-scw-order-4] com.deng.proj.feign.OrderServiceFeign    : [OrderServiceFeign#createOrder] date: Sun, 07 May 2023 01:32:39 GMT
+2023-05-07 09:32:39.505 DEBUG 2488 --- [hystrix-scw-order-4] com.deng.proj.feign.OrderServiceFeign    : [OrderServiceFeign#createOrder] keep-alive: timeout=60
+2023-05-07 09:32:39.505 DEBUG 2488 --- [hystrix-scw-order-4] com.deng.proj.feign.OrderServiceFeign    : [OrderServiceFeign#createOrder] transfer-encoding: chunked
+2023-05-07 09:32:39.505 DEBUG 2488 --- [hystrix-scw-order-4] com.deng.proj.feign.OrderServiceFeign    : [OrderServiceFeign#createOrder] 
+2023-05-07 09:32:39.506 DEBUG 2488 --- [hystrix-scw-order-4] com.deng.proj.feign.OrderServiceFeign    : [OrderServiceFeign#createOrder] {"code":0,"msg":"操作成功","data":{"id":54,"memberid":12,"projectid":15,"returnid":13,"ordernum":"e7f6198800bf4b948cd3a39aaafcdda3","createdate":"2023-05-07 09:32:39","money":292,"rtncount":1,"status":"0","address":"南阳,","invoice":null,"invoictitle":"","remark":""}}
+2023-05-07 09:32:39.507 DEBUG 2488 --- [hystrix-scw-order-4] com.deng.proj.feign.OrderServiceFeign    : [OrderServiceFeign#createOrder] <--- END HTTP (274-byte body)
+2023-05-07 09:32:39.893 DEBUG 2488 --- [hystrix-scw-order-5] com.deng.proj.feign.OrderServiceFeign    : [OrderServiceFeign#findall] ---> POST http://scw-order/order/all HTTP/1.1
+2023-05-07 09:32:39.893 DEBUG 2488 --- [hystrix-scw-order-5] com.deng.proj.feign.OrderServiceFeign    : [OrderServiceFeign#findall] Content-Length: 32
+2023-05-07 09:32:39.893 DEBUG 2488 --- [hystrix-scw-order-5] com.deng.proj.feign.OrderServiceFeign    : [OrderServiceFeign#findall] Content-Type: text/plain;charset=UTF-8
+2023-05-07 09:32:39.893 DEBUG 2488 --- [hystrix-scw-order-5] com.deng.proj.feign.OrderServiceFeign    : [OrderServiceFeign#findall] 
+2023-05-07 09:32:39.893 DEBUG 2488 --- [hystrix-scw-order-5] com.deng.proj.feign.OrderServiceFeign    : [OrderServiceFeign#findall] f557cb1238a14bd99bf2f03bbf34337d
+2023-05-07 09:32:39.893 DEBUG 2488 --- [hystrix-scw-order-5] com.deng.proj.feign.OrderServiceFeign    : [OrderServiceFeign#findall] ---> END HTTP (32-byte body)
+2023-05-07 09:32:39.922 DEBUG 2488 --- [hystrix-scw-order-5] com.deng.proj.feign.OrderServiceFeign    : [OrderServiceFeign#findall] <--- HTTP/1.1 200 (28ms)
+2023-05-07 09:32:39.922 DEBUG 2488 --- [hystrix-scw-order-5] com.deng.proj.feign.OrderServiceFeign    : [OrderServiceFeign#findall] connection: keep-alive
+2023-05-07 09:32:39.922 DEBUG 2488 --- [hystrix-scw-order-5] com.deng.proj.feign.OrderServiceFeign    : [OrderServiceFeign#findall] content-type: application/json
+2023-05-07 09:32:39.922 DEBUG 2488 --- [hystrix-scw-order-5] com.deng.proj.feign.OrderServiceFeign    : [OrderServiceFeign#findall] date: Sun, 07 May 2023 01:32:39 GMT
+2023-05-07 09:32:39.922 DEBUG 2488 --- [hystrix-scw-order-5] com.deng.proj.feign.OrderServiceFeign    : [OrderServiceFeign#findall] keep-alive: timeout=60
+2023-05-07 09:32:39.922 DEBUG 2488 --- [hystrix-scw-order-5] com.deng.proj.feign.OrderServiceFeign    : [OrderServiceFeign#findall] transfer-encoding: chunked
+2023-05-07 09:32:39.922 DEBUG 2488 --- [hystrix-scw-order-5] com.deng.proj.feign.OrderServiceFeign    : [OrderServiceFeign#findall] 
+2023-05-07 09:32:39.925 DEBUG 2488 --- [hystrix-scw-order-5] com.deng.proj.feign.OrderServiceFeign    : [OrderServiceFeign#findall] {"code":0,"msg":"操作成功","data":[{"name":"智能夜灯","id":54,"memberid":12,"projectid":15,"returnid":13,"ordernum":"e7f6198800bf4b948cd3a39aaafcdda3","createdate":"2023-05-07 09:32:39","money":292,"rtncount":1,"status":"0","address":"南阳,","invoice":null,"invoictitle":"","remark":""},{"name":"ER儿童机器人","id":53,"memberid":12,"projectid":14,"returnid":12,"ordernum":"1dfbc435e153401ab0e6be9db8df6c35","createdate":"2023-05-07 09:22:58","money":100,"rtncount":1,"status":"0","address":"南阳,","invoice":null,"invoictitle":"","remark":""},{"name":"智能夜灯","id":50,"memberid":12,"projectid":15,"returnid":13,"ordernum":"00769c9e863d4815bfa3482268290269","createdate":"2023-03-29 15:57:22","money":292,"rtncount":1,"status":"0","address":"郑州","invoice":null,"invoictitle":"1","remark":"无"},{"name":"ER儿童机器人","id":49,"memberid":12,"projectid":14,"returnid":12,"ordernum":"758fb5360dc946b4b962638c888879c4","createdate":"2023-03-29 15:50:51","money":100,"rtncount":1,"status":"0","address":"郑州西亚斯,","invoice":null,"invoictitle":"","remark":""}]}
+2023-05-07 09:32:39.925 DEBUG 2488 --- [hystrix-scw-order-5] com.deng.proj.feign.OrderServiceFeign    : [OrderServiceFeign#findall] <--- END HTTP (1094-byte body)
+2023-05-07 09:32:44.666 DEBUG 2488 --- [hystrix-scw-order-6] com.deng.proj.feign.OrderServiceFeign    : [OrderServiceFeign#del] ---> POST http://scw-order/order/del/54 HTTP/1.1
+2023-05-07 09:32:44.667 DEBUG 2488 --- [hystrix-scw-order-6] com.deng.proj.feign.OrderServiceFeign    : [OrderServiceFeign#del] ---> END HTTP (0-byte body)
+2023-05-07 09:32:44.686 DEBUG 2488 --- [hystrix-scw-order-6] com.deng.proj.feign.OrderServiceFeign    : [OrderServiceFeign#del] <--- HTTP/1.1 200 (19ms)
+2023-05-07 09:32:44.687 DEBUG 2488 --- [hystrix-scw-order-6] com.deng.proj.feign.OrderServiceFeign    : [OrderServiceFeign#del] connection: keep-alive
+2023-05-07 09:32:44.687 DEBUG 2488 --- [hystrix-scw-order-6] com.deng.proj.feign.OrderServiceFeign    : [OrderServiceFeign#del] content-type: application/json
+2023-05-07 09:32:44.687 DEBUG 2488 --- [hystrix-scw-order-6] com.deng.proj.feign.OrderServiceFeign    : [OrderServiceFeign#del] date: Sun, 07 May 2023 01:32:44 GMT
+2023-05-07 09:32:44.687 DEBUG 2488 --- [hystrix-scw-order-6] com.deng.proj.feign.OrderServiceFeign    : [OrderServiceFeign#del] keep-alive: timeout=60
+2023-05-07 09:32:44.688 DEBUG 2488 --- [hystrix-scw-order-6] com.deng.proj.feign.OrderServiceFeign    : [OrderServiceFeign#del] transfer-encoding: chunked
+2023-05-07 09:32:44.688 DEBUG 2488 --- [hystrix-scw-order-6] com.deng.proj.feign.OrderServiceFeign    : [OrderServiceFeign#del] 
+2023-05-07 09:32:44.688 DEBUG 2488 --- [hystrix-scw-order-6] com.deng.proj.feign.OrderServiceFeign    : [OrderServiceFeign#del] {"code":0,"msg":"操作成功","data":"删除成功"}
+2023-05-07 09:32:44.688 DEBUG 2488 --- [hystrix-scw-order-6] com.deng.proj.feign.OrderServiceFeign    : [OrderServiceFeign#del] <--- END HTTP (53-byte body)
+2023-05-07 09:32:45.057 DEBUG 2488 --- [hystrix-scw-order-7] com.deng.proj.feign.OrderServiceFeign    : [OrderServiceFeign#findall] ---> POST http://scw-order/order/all HTTP/1.1
+2023-05-07 09:32:45.057 DEBUG 2488 --- [hystrix-scw-order-7] com.deng.proj.feign.OrderServiceFeign    : [OrderServiceFeign#findall] Content-Length: 32
+2023-05-07 09:32:45.057 DEBUG 2488 --- [hystrix-scw-order-7] com.deng.proj.feign.OrderServiceFeign    : [OrderServiceFeign#findall] Content-Type: text/plain;charset=UTF-8
+2023-05-07 09:32:45.057 DEBUG 2488 --- [hystrix-scw-order-7] com.deng.proj.feign.OrderServiceFeign    : [OrderServiceFeign#findall] 
+2023-05-07 09:32:45.057 DEBUG 2488 --- [hystrix-scw-order-7] com.deng.proj.feign.OrderServiceFeign    : [OrderServiceFeign#findall] f557cb1238a14bd99bf2f03bbf34337d
+2023-05-07 09:32:45.057 DEBUG 2488 --- [hystrix-scw-order-7] com.deng.proj.feign.OrderServiceFeign    : [OrderServiceFeign#findall] ---> END HTTP (32-byte body)
+2023-05-07 09:32:45.079 DEBUG 2488 --- [hystrix-scw-order-7] com.deng.proj.feign.OrderServiceFeign    : [OrderServiceFeign#findall] <--- HTTP/1.1 200 (21ms)
+2023-05-07 09:32:45.079 DEBUG 2488 --- [hystrix-scw-order-7] com.deng.proj.feign.OrderServiceFeign    : [OrderServiceFeign#findall] connection: keep-alive
+2023-05-07 09:32:45.079 DEBUG 2488 --- [hystrix-scw-order-7] com.deng.proj.feign.OrderServiceFeign    : [OrderServiceFeign#findall] content-type: application/json
+2023-05-07 09:32:45.079 DEBUG 2488 --- [hystrix-scw-order-7] com.deng.proj.feign.OrderServiceFeign    : [OrderServiceFeign#findall] date: Sun, 07 May 2023 01:32:44 GMT
+2023-05-07 09:32:45.079 DEBUG 2488 --- [hystrix-scw-order-7] com.deng.proj.feign.OrderServiceFeign    : [OrderServiceFeign#findall] keep-alive: timeout=60
+2023-05-07 09:32:45.080 DEBUG 2488 --- [hystrix-scw-order-7] com.deng.proj.feign.OrderServiceFeign    : [OrderServiceFeign#findall] transfer-encoding: chunked
+2023-05-07 09:32:45.080 DEBUG 2488 --- [hystrix-scw-order-7] com.deng.proj.feign.OrderServiceFeign    : [OrderServiceFeign#findall] 
+2023-05-07 09:32:45.081 DEBUG 2488 --- [hystrix-scw-order-7] com.deng.proj.feign.OrderServiceFeign    : [OrderServiceFeign#findall] {"code":0,"msg":"操作成功","data":[{"name":"ER儿童机器人","id":53,"memberid":12,"projectid":14,"returnid":12,"ordernum":"1dfbc435e153401ab0e6be9db8df6c35","createdate":"2023-05-07 09:22:58","money":100,"rtncount":1,"status":"0","address":"南阳,","invoice":null,"invoictitle":"","remark":""},{"name":"智能夜灯","id":50,"memberid":12,"projectid":15,"returnid":13,"ordernum":"00769c9e863d4815bfa3482268290269","createdate":"2023-03-29 15:57:22","money":292,"rtncount":1,"status":"0","address":"郑州","invoice":null,"invoictitle":"1","remark":"无"},{"name":"ER儿童机器人","id":49,"memberid":12,"projectid":14,"returnid":12,"ordernum":"758fb5360dc946b4b962638c888879c4","createdate":"2023-03-29 15:50:51","money":100,"rtncount":1,"status":"0","address":"郑州西亚斯,","invoice":null,"invoictitle":"","remark":""}]}
+2023-05-07 09:32:45.081 DEBUG 2488 --- [hystrix-scw-order-7] com.deng.proj.feign.OrderServiceFeign    : [OrderServiceFeign#findall] <--- END HTTP (836-byte body)
+2023-05-07 09:32:48.236 DEBUG 2488 --- [hystrix-scw-order-8] com.deng.proj.feign.OrderServiceFeign    : [OrderServiceFeign#del] ---> POST http://scw-order/order/del/53 HTTP/1.1
+2023-05-07 09:32:48.236 DEBUG 2488 --- [hystrix-scw-order-8] com.deng.proj.feign.OrderServiceFeign    : [OrderServiceFeign#del] ---> END HTTP (0-byte body)
+2023-05-07 09:32:48.257 DEBUG 2488 --- [hystrix-scw-order-8] com.deng.proj.feign.OrderServiceFeign    : [OrderServiceFeign#del] <--- HTTP/1.1 200 (20ms)
+2023-05-07 09:32:48.257 DEBUG 2488 --- [hystrix-scw-order-8] com.deng.proj.feign.OrderServiceFeign    : [OrderServiceFeign#del] connection: keep-alive
+2023-05-07 09:32:48.257 DEBUG 2488 --- [hystrix-scw-order-8] com.deng.proj.feign.OrderServiceFeign    : [OrderServiceFeign#del] content-type: application/json
+2023-05-07 09:32:48.258 DEBUG 2488 --- [hystrix-scw-order-8] com.deng.proj.feign.OrderServiceFeign    : [OrderServiceFeign#del] date: Sun, 07 May 2023 01:32:48 GMT
+2023-05-07 09:32:48.258 DEBUG 2488 --- [hystrix-scw-order-8] com.deng.proj.feign.OrderServiceFeign    : [OrderServiceFeign#del] keep-alive: timeout=60
+2023-05-07 09:32:48.258 DEBUG 2488 --- [hystrix-scw-order-8] com.deng.proj.feign.OrderServiceFeign    : [OrderServiceFeign#del] transfer-encoding: chunked
+2023-05-07 09:32:48.258 DEBUG 2488 --- [hystrix-scw-order-8] com.deng.proj.feign.OrderServiceFeign    : [OrderServiceFeign#del] 
+2023-05-07 09:32:48.259 DEBUG 2488 --- [hystrix-scw-order-8] com.deng.proj.feign.OrderServiceFeign    : [OrderServiceFeign#del] {"code":0,"msg":"操作成功","data":"删除成功"}
+2023-05-07 09:32:48.260 DEBUG 2488 --- [hystrix-scw-order-8] com.deng.proj.feign.OrderServiceFeign    : [OrderServiceFeign#del] <--- END HTTP (53-byte body)
+2023-05-07 09:32:48.628 DEBUG 2488 --- [hystrix-scw-order-9] com.deng.proj.feign.OrderServiceFeign    : [OrderServiceFeign#findall] ---> POST http://scw-order/order/all HTTP/1.1
+2023-05-07 09:32:48.629 DEBUG 2488 --- [hystrix-scw-order-9] com.deng.proj.feign.OrderServiceFeign    : [OrderServiceFeign#findall] Content-Length: 32
+2023-05-07 09:32:48.629 DEBUG 2488 --- [hystrix-scw-order-9] com.deng.proj.feign.OrderServiceFeign    : [OrderServiceFeign#findall] Content-Type: text/plain;charset=UTF-8
+2023-05-07 09:32:48.629 DEBUG 2488 --- [hystrix-scw-order-9] com.deng.proj.feign.OrderServiceFeign    : [OrderServiceFeign#findall] 
+2023-05-07 09:32:48.629 DEBUG 2488 --- [hystrix-scw-order-9] com.deng.proj.feign.OrderServiceFeign    : [OrderServiceFeign#findall] f557cb1238a14bd99bf2f03bbf34337d
+2023-05-07 09:32:48.629 DEBUG 2488 --- [hystrix-scw-order-9] com.deng.proj.feign.OrderServiceFeign    : [OrderServiceFeign#findall] ---> END HTTP (32-byte body)
+2023-05-07 09:32:48.653 DEBUG 2488 --- [hystrix-scw-order-9] com.deng.proj.feign.OrderServiceFeign    : [OrderServiceFeign#findall] <--- HTTP/1.1 200 (23ms)
+2023-05-07 09:32:48.653 DEBUG 2488 --- [hystrix-scw-order-9] com.deng.proj.feign.OrderServiceFeign    : [OrderServiceFeign#findall] connection: keep-alive
+2023-05-07 09:32:48.653 DEBUG 2488 --- [hystrix-scw-order-9] com.deng.proj.feign.OrderServiceFeign    : [OrderServiceFeign#findall] content-type: application/json
+2023-05-07 09:32:48.653 DEBUG 2488 --- [hystrix-scw-order-9] com.deng.proj.feign.OrderServiceFeign    : [OrderServiceFeign#findall] date: Sun, 07 May 2023 01:32:48 GMT
+2023-05-07 09:32:48.653 DEBUG 2488 --- [hystrix-scw-order-9] com.deng.proj.feign.OrderServiceFeign    : [OrderServiceFeign#findall] keep-alive: timeout=60
+2023-05-07 09:32:48.653 DEBUG 2488 --- [hystrix-scw-order-9] com.deng.proj.feign.OrderServiceFeign    : [OrderServiceFeign#findall] transfer-encoding: chunked
+2023-05-07 09:32:48.654 DEBUG 2488 --- [hystrix-scw-order-9] com.deng.proj.feign.OrderServiceFeign    : [OrderServiceFeign#findall] 
+2023-05-07 09:32:48.655 DEBUG 2488 --- [hystrix-scw-order-9] com.deng.proj.feign.OrderServiceFeign    : [OrderServiceFeign#findall] {"code":0,"msg":"操作成功","data":[{"name":"智能夜灯","id":50,"memberid":12,"projectid":15,"returnid":13,"ordernum":"00769c9e863d4815bfa3482268290269","createdate":"2023-03-29 15:57:22","money":292,"rtncount":1,"status":"0","address":"郑州","invoice":null,"invoictitle":"1","remark":"无"},{"name":"ER儿童机器人","id":49,"memberid":12,"projectid":14,"returnid":12,"ordernum":"758fb5360dc946b4b962638c888879c4","createdate":"2023-03-29 15:50:51","money":100,"rtncount":1,"status":"0","address":"郑州西亚斯,","invoice":null,"invoictitle":"","remark":""}]}
+2023-05-07 09:32:48.655 DEBUG 2488 --- [hystrix-scw-order-9] com.deng.proj.feign.OrderServiceFeign    : [OrderServiceFeign#findall] <--- END HTTP (573-byte body)
+2023-05-07 09:33:15.497 DEBUG 2488 --- [hystrix-scw-project-10] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#all] ---> GET http://scw-project/project/all HTTP/1.1
+2023-05-07 09:33:15.498 DEBUG 2488 --- [hystrix-scw-project-10] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#all] ---> END HTTP (0-byte body)
+2023-05-07 09:33:15.568 DEBUG 2488 --- [hystrix-scw-project-10] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#all] <--- HTTP/1.1 200 (70ms)
+2023-05-07 09:33:15.568 DEBUG 2488 --- [hystrix-scw-project-10] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#all] connection: keep-alive
+2023-05-07 09:33:15.569 DEBUG 2488 --- [hystrix-scw-project-10] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#all] content-type: application/json
+2023-05-07 09:33:15.569 DEBUG 2488 --- [hystrix-scw-project-10] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#all] date: Sun, 07 May 2023 01:33:15 GMT
+2023-05-07 09:33:15.569 DEBUG 2488 --- [hystrix-scw-project-10] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#all] keep-alive: timeout=60
+2023-05-07 09:33:15.569 DEBUG 2488 --- [hystrix-scw-project-10] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#all] transfer-encoding: chunked
+2023-05-07 09:33:15.569 DEBUG 2488 --- [hystrix-scw-project-10] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#all] 
+2023-05-07 09:33:15.569 DEBUG 2488 --- [hystrix-scw-project-10] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#all] {"code":0,"msg":"操作成功","data":[{"memberid":3,"id":6,"name":"第1个项目","remark":"非常棒的项目","headerImage":null,"money":50000,"createdate":"2020-01-11 13:08:57","follower":88},{"memberid":6,"id":7,"name":"测试项目","remark":"这是一个好项目","headerImage":null,"money":100000,"createdate":"2020-06-16 06:50:04","follower":100},{"memberid":8,"id":8,"name":"鉴赏","remark":"用心去看","headerImage":null,"money":2000000,"createdate":"2021-12-23 18:54:31","follower":66},{"memberid":9,"id":9,"name":"aaaa","remark":"FfF","headerImage":null,"money":10,"createdate":"2023-02-01 17:51:53","follower":34},{"memberid":9,"id":13,"name":"测试项目4","remark":"测试4","headerImage":null,"money":10000,"createdate":"2023-02-23 17:42:00","follower":1},{"memberid":9,"id":14,"name":"ER儿童机器人","remark":"儿童好伙伴","headerImage":null,"money":1999,"createdate":"2023-02-23 17:42:00","follower":100},{"memberid":9,"id":15,"name":"智能夜灯","remark":"给您家人最贴心的关怀","headerImage":null,"money":38888,"createdate":"2023-02-25 17:42:00","follower":105},{"memberid":9,"id":16,"name":"PM2.5空气质量检测仪","remark":"您的健康生活小助手","headerImage":null,"money":58888,"createdate":"2023-02-25 17:42:00","follower":108},{"memberid":9,"id":23,"name":"测试报告项目","remark":"这个是测试项目","headerImage":null,"money":100,"createdate":"2023-03-26 00:54:36","follower":null},{"memberid":12,"id":25,"name":"1","remark":"","headerImage":null,"money":1,"createdate":"2023-05-07 09:24:37","follower":null}]}
+2023-05-07 09:33:15.569 DEBUG 2488 --- [hystrix-scw-project-10] com.deng.proj.feign.ProjectServiceFeign  : [ProjectServiceFeign#all] <--- END HTTP (1583-byte body)
+2023-05-07 09:36:40.339  INFO 2488 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-05-07 09:41:40.343  INFO 2488 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-05-07 09:46:40.359  INFO 2488 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-05-07 09:51:44.180  INFO 2488 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-05-07 09:56:44.195  INFO 2488 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-05-07 10:01:44.206  INFO 2488 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-05-07 10:06:44.217  INFO 2488 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-05-07 10:11:44.222  INFO 2488 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-05-07 10:16:44.234  INFO 2488 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-05-07 22:01:01.201  INFO 2488 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration

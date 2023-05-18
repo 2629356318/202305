@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="zh-CN" xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="keys" content="">
+    <meta name="author" content="">
+	<link rel="stylesheet" th:href="@{/css/login.css}">
+      <div th:include="~{include/include :: cssStyle }"></div>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <div><a class="navbar-brand" href="/" style="font-size:32px;">创意产品众筹平台</a></div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+
+      <form class="form-signin" id="loForm" th:action="@{/project/saveBaseInfo}" method="post">
+
+        <h2 class="form-signin-heading"><i class="glyphicon glyphicon-log-in"></i> 项目创建</h2>
+        <h4 th:text="'项目编码'">
+        </h4>
+        <div class="form-group has-success has-feedback">
+
+          <input type="text" class="form-control" id="projectToken" name="projectToken" th:value="${session.aa.projectToken}" readonly="readonly">
+          <span class="glyphicon glyphicon-user form-control-feedback"></span>
+        </div>
+        <div class="form-group has-success has-feedback">
+			<input type="text" class="form-control" id="name" name="name"  placeholder="项目名称" autofocus>
+			<span class="glyphicon glyphicon-user form-control-feedback"></span>
+		  </div> 
+        <div class="form-group has-success has-feedback">
+        <input type="text" class="form-control" id="remark" name="remark"  placeholder="项目简介" autofocus>
+        <span class="glyphicon glyphicon-user form-control-feedback"></span>
+      </div>
+        <div class="form-group has-success has-feedback">
+          <input type="text" class="form-control" id="day" name="day"  placeholder="筹资天数" autofocus>
+          <span class="glyphicon glyphicon-user form-control-feedback"></span>
+        </div>
+
+        <div class="form-group has-success has-feedback">
+          <input type="text" class="form-control" id="money" name="money"  placeholder="总筹资金额" autofocus>
+          <span class="glyphicon glyphicon-user form-control-feedback"></span>
+        </div>
+        <div class="form-group has-success has-feedback">
+          <input type="text" class="form-control" id="supportmoney" name="supportmoney"  placeholder="当前筹资金额" autofocus>
+          <span class="glyphicon glyphicon-user form-control-feedback"></span>
+        </div>
+        <div class="form-group has-success has-feedback">
+        <input type="text" class="form-control" id="supporter" name="supporter"  placeholder="已筹资人数" autofocus>
+        <span class="glyphicon glyphicon-user form-control-feedback"></span>
+      </div>
+        <div class="form-group has-success has-feedback">
+          <select name="status"  id="status" class="form-control" >
+            <option value ="0" selected>项目状态:当前为即将开始</option>
+            <option value ="1">项目状态:当前为众筹中</option>
+            <option value ="2">项目状态:当前为众筹成功</option>
+            <option value ="3">项目状态:当前为众筹失败</option>
+          </select>
+
+        </div>
+        <a class="btn btn-lg btn-success btn-block" onclick="dologin1()" > 提交</a>
+      </form>
+      </div>
+    </div>
+    <div th:include="~{include/include :: commonJs}"></div>
+    <script th:inline="javascript">
+    function dologin1() {
+        $('#loForm').submit();
+
+    }
+
+
+
+
+    </script>
+  </body>
+</html>

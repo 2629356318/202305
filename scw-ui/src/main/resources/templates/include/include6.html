@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+
+    <div th:fragment="cssStyle">
+        <link rel="stylesheet" th:href="@{/bootstrap/css/bootstrap.min.css}">
+        <link rel="stylesheet" th:href="@{/css/font-awesome.min.css}">
+        <link rel="stylesheet" th:href="@{/css/carousel.css}">
+        <link rel="stylesheet" th:href="@{/css/theme.css}">
+    </div>
+</head>
+<body>
+<div th:fragment="commonJs">
+    <script src="/static/jquery/jquery-2.1.1.min.js" th:src="@{/jquery/jquery-2.1.1.min.js}"></script>
+    <script src="/static/bootstrap/js/bootstrap.min.js" th:src="@{/bootstrap/js/bootstrap.min.js}"></script>
+    <script src="/static/script/docs.min.js" th:src="@{/script/docs.min.js}"></script>
+    <script src="/static/script/back-to-top.js" th:src="@{/script/back-to-top.js}"></script>
+</div>
+<div class="container" id="footerBar">
+    <div class="row clearfix">
+        <div class="col-md-12 column">
+            <div id="footer">
+                <div class="footerNav">
+
+                </div>
+                <div class="copyRight">
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<script  th:inline="javascript">
+    var projects1 = [[${regist.data}]]; <!--接收值-->
+
+    $(function showData() {
+        alert(projects1);  <!--测试是否接收到-->
+        window.location.href = "/login"
+
+    });
+	</script>
+</body>
+
+</html>

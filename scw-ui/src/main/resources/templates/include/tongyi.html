@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="zh-CN" xmlns:th="http://www.thymeleaf.org" xmlns:text-aling="http://www.w3.org/1999/xhtml"
+      xmlns:text-align="http://www.w3.org/1999/xhtml" xmlns:padx="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="keys" content="">
+    <meta name="author" content="">
+    <link rel="stylesheet" th:href="@{/css/login.css}">
+    <div th:include="~{include/include :: cssStyle }"></div>
+
+<style>
+    #footer {
+        padding: 15px 0;
+        background: #fff;
+        border-top: 1px solid #ddd;
+        text-align: center;
+    }
+    #topcontrol {
+        color: #fff;
+        z-index: 99;
+        width: 30px;
+        height: 30px;
+        font-size: 20px;
+        background: #222;
+        position: relative;
+        right: 14px !important;
+        bottom: 11px !important;
+        border-radius: 3px !important;
+    }
+
+    #topcontrol:after {
+        /*top: -2px;*/
+        left: 8.5px;
+        content: "\f106";
+        position: absolute;
+        text-align: center;
+        font-family: FontAwesome;
+    }
+
+    #topcontrol:hover {
+        color: #fff;
+        background: #18ba9b;
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+    }
+
+</style>
+</head>
+<body>
+<table>
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <div><a class="navbar-brand" href="/" style="font-size:32px;">创意产品众筹平台</a></div>
+        </div>
+    </div>
+</nav>
+
+<div class="container">
+
+    <div class="panel-body">
+        <p>1.众筹并非商品交易，存在一定风险。支持者根据自己的判断选择、支持众筹项目，与发起人共同实现梦想并获得发起人承诺的回报。<br>
+            2.发起人为甲方，众筹平台为乙方。<br>
+            3.乙方仅提供平台网络空间及技术支持等中介服务，众筹仅存在于发起人和支持者之间，使用众筹平台产生的法律后果由发起人与支持者自行承担。<br>
+            4.需通过当面、传真、扫描签署或授权乙方代为签署的方式与众筹发起方签甲方决定投资，署《众筹协议》。<br>
+            5.协议一旦签订，甲方应按照《众筹协议》的约定，向众筹支持方进行回报。<br>
+            6.甲方签订《众筹协议》后，乙方将按照协议约定督促甲方投资收益的划转和投资款的到期收回等权益事宜。<br>
+            7.乙方作为《众筹协议》的中介方，有义务监督、敦促投资方、众筹发起方严格履行合同，并在任何一方出现违约时，协助守约方维护权益.<br>
+            8.如您不同意上述风险提示内容，您有权选择不支持；一旦选择支持，视为您已确认并同意以上提示内容。</p>
+    </div>
+</div>
+
+    <div class="container">
+        <label style="float:contour" align="center" >
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+           <a class="btn btn-success" th:href="@{/project/init}" >同意</a>
+            <a class="btn btn-danger" th:href="@{/}" >拒绝</a>
+        </label>
+        <!--<button type="button" @click="handleDelete(${orde.id})" class="btn btn-default">删除订单</button>
+        <button type="button" class="btn btn-default">交易详情</button>-->
+    </div>
+</table>
+
+<div th:include="~{include/include :: commonJs}"></div>
+<script>
+
+</script>
+</body>
+</html>

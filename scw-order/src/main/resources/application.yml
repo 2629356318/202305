@@ -1,0 +1,35 @@
+spring:
+  redis:
+    url: redis://localhost:6379
+  datasource:
+    url: jdbc:mysql:///student?useUnicode=true&characterEncoding=utf-8&serverTimezone=GMT
+    username: root
+    password: 1234
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    show-sql: true
+  main:
+    allow-bean-definition-overriding: true
+  application:
+    name: scw-order
+eureka:
+  client:
+    service-url:
+      default-zone: http://localhost:8761/eureka/
+  instance:
+    prefer-ip-address: true
+logging:
+  file:
+    path: ./scw-order/log
+server:
+  port: 8002
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health
+feign:
+  hystrix:
+    enabled: true
+mybatis:
+  mapper-locations: classpath:**/*.xml

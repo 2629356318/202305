@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="zh-CN" xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="keys" content="">
+    <meta name="author" content="">
+	<link rel="stylesheet" th:href="@{/css/login.css}">
+      <div th:include="~{include/include :: cssStyle }"></div>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <div><a class="navbar-brand" href="/" style="font-size:32px;">创意产品众筹平台</a></div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+
+      <form class="form-signin" id="loForm" th:action="@{/regist}" method="post">
+
+        <h2 class="form-signin-heading"><i class="glyphicon glyphicon-log-in"></i> 重置密码</h2>
+
+        <div class="form-group has-success has-feedback">
+			<input type="text" class="form-control" id="loginacct" name="loginacct"  placeholder="注册手机号，同时是登陆账号" autofocus>
+			<span class="glyphicon glyphicon-user form-control-feedback"></span>
+		  </div> 
+        <div class="form-group has-success has-feedback">
+        <input type="password" class="form-control" id="userpswd"  name="userpswd"  placeholder="请输入新密码" autofocus>
+        <span class="glyphicon glyphicon-user form-control-feedback"></span>
+      </div>
+        <div class="form-group has-success has-feedback" >
+          <input type="password" id="reuserpswd"  class="form-control" placeholder="请在输入新密码" data-required="required" autocomplete="off" onkeyup="validatePWD_phone()" /><span id="tip_phone"></span>
+          <span class="glyphicon glyphicon-user form-control-feedback"></span>
+        </div>
+        <div class="form-group has-success has-feedback">
+          <input type="text" class="" id="code" name="code"  placeholder="请输入验证码" autofocus>
+          <input id="btn_getMessage" name = "btn_getMessage" type="button" class="child" value="获取验证码" onclick = "getMessage()" />
+        </div>
+        <div class="form-item-btn" >
+          <input id="submit_phone" name="submit_phone" type="submit" class="btn btn-lg btn-success btn-block" value="重置密码" onclick="dologin1()"  disabled="true" />
+        </div>
+
+      </form>
+      </div>
+    </div>
+    <div th:include="~{include/include :: commonJs}"></div>
+    <script>
+    function dologin1() {
+        $('#loForm').submit()
+    }
+    function validatePWD_phone(){
+      var pwd1 = document.getElementById("userpswd").value;
+      var pwd2 = document.getElementById("reuserpswd").value;
+      if(pwd1 == pwd2) {
+        document.getElementById("tip_phone").innerHTML="✔两次密码相同";
+        document.getElementById("tip_phone").style.color="green";
+        document.getElementById("submit_phone").disabled = false;
+        //document.getElementById("tip_phone").innerHTML="<font color='green'>✔两次密码相同</font>";
+      }
+      else {
+        document.getElementById("tip_phone").innerHTML="✘两次密码不相同";
+        document.getElementById("tip_phone").style.color="red";
+        document.getElementById("submit_phone").disabled = true;
+        //document.getElementById("tip_phone").innerHTML="<font color='red'>✘两次密码不相同</font>";
+      }
+    }
+    var InterValObj; //timer变量，控制时间
+    var count = 30; //间隔函数，1秒执行
+    var curCount;//当前剩余秒数
+    function getMessage(){
+      sendMessage();
+      curCount = count;
+      $("#btn_getMessage").attr("disabled", "true");
+      $("#btn_getMessage").val(curCount + "秒后可发送");
+      InterValObj = window.setInterval(SetRemainTime, 1000);
+    }
+    //timer处理函数
+    function SetRemainTime() {
+      if (curCount == 0) {
+        window.clearInterval(InterValObj);//停止计时器
+        $("#btn_getMessage").removeAttr("disabled");//启用按钮
+        $("#btn_getMessage").val("重新发送验证码");
+      }
+      else {
+        curCount--;
+        $("#btn_getMessage").val(curCount + "秒后可发送");
+      }
+    }
+
+    function sendMessage(){
+      var loginacct = $("#loginacct").val();
+      if(loginacct != ""){
+        $.ajax({
+          url : "/sendCode",  //这里需要修改
+          type : "POST",
+          data:{
+            loginacct:$("#loginacct").val()
+          },
+          success:function(data){
+            if(data.code == 0){
+              sms = data.data;
+              layer.msg(data.msg);
+            }
+            else{
+              layer.msg(data.msg);
+            }
+          },
+
+        })
+      }
+    }
+    </script>
+  </body>
+</html>

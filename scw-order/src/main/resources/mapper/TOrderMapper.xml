@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.deng.proj.mapper.TOrderMapper">
+
+    <resultMap type="com.deng.proj.entity.TOrder" id="TOrderResult">
+        <result property="id"    column="id"    />
+        <result property="memberid"    column="memberid"    />
+        <result property="projectid"    column="projectid"    />
+        <result property="returnid"    column="returnid"    />
+        <result property="ordernum"    column="ordernum"    />
+        <result property="createdate"    column="createdate"    />
+        <result property="money"    column="money"    />
+        <result property="rtncount"    column="rtncount"    />
+        <result property="status"    column="status"    />
+        <result property="address"    column="address"    />
+        <result property="invoice"    column="invoice"    />
+        <result property="invoictitle"    column="invoictitle"    />
+        <result property="remark"    column="remark"    />
+    </resultMap>
+    <resultMap type="com.deng.proj.vo.TorderVo" id="TorderVoResult">
+        <result property="id"    column="id"    />
+        <result property="memberid"    column="memberid"    />
+        <result property="projectid"    column="projectid"    />
+        <result property="returnid"    column="returnid"    />
+        <result property="ordernum"    column="ordernum"    />
+        <result property="createdate"    column="createdate"    />
+        <result property="money"    column="money"    />
+        <result property="rtncount"    column="rtncount"    />
+        <result property="status"    column="status"    />
+        <result property="address"    column="address"    />
+        <result property="invoice"    column="invoice"    />
+        <result property="invoictitle"    column="invoictitle"    />
+        <result property="remark"    column="remark"    />
+        <result property="name"    column="name"    />
+    </resultMap>
+
+
+    <select id="a" parameterType="Integer" resultMap="TorderVoResult">
+    select b.name ,a.id, a.memberid, a.projectid, a.returnid, a.ordernum, a.createdate, a.money, a.rtncount, a.status, a.address, a.invoice, a.invoictitle, a.remark from t_order a
+    left join t_project b on a.projectid=b.id
+    where a.memberid = #{id}
+   order by a.createdate desc
+</select>
+
+
+
+
+
+
+
+    <delete id="deleteTOrderById" parameterType="Integer">
+        delete from t_order where id = #{id}
+    </delete>
+
+    <delete id="deleteTOrderByIds" parameterType="String">
+        delete from t_order where id in
+        <foreach item="id" collection="array" open="(" separator="," close=")">
+            #{id}
+        </foreach>
+    </delete>
+</mapper>
